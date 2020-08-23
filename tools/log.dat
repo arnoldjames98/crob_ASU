@@ -1,0 +1,13 @@
+# imt log
+s logheadsize 000000
+s logcolumns 25
+s logname /home/imt/logs/Hyunglae/AnkleReflexStudy/20171217/25 log.dat
+s logversion 2.0
+s logdate "Sun Dec 17 12:45:14 EST 2017"
+s logidate 1513532714
+
+# begin user data
+
+# end user data
+
+#####

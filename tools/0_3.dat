@@ -1,0 +1,13 @@
+# imt log
+s logheadsize 000000
+s logcolumns 23
+s logname /home/imt/imt/robot4/protocols/ankle/GenderDifferenceProject/20170403/s03_ 0_3.dat
+s logversion 2.0
+s logdate "Mon Apr 3 17:28:49 EDT 2017"
+s logidate 1491254929
+
+# begin user data
+
+# end user data
+
+#####

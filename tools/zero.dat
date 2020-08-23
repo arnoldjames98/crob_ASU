@@ -1,0 +1,13 @@
+# imt log
+s logheadsize 000000
+s logcolumns 24
+s logname /home/imt/logs/Hyunglae/AnkleReflexStudy/20190309/test1_ zero.dat
+s logversion 2.0
+s logdate "Sat Mar 9 15:18:59 MST 2019"
+s logidate 1552169939
+
+# begin user data
+
+# end user data
+
+#####

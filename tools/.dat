@@ -1,0 +1,13 @@
+# imt log
+s logheadsize 000000
+s logcolumns 21
+s logname /home/imt/logs/Carly/20190726/anklebot_shoe_amp15_speed5_test .dat
+s logversion 2.0
+s logdate "Fri Jul 26 13:29:25 MST 2019"
+s logidate 1564172965
+
+# begin user data
+
+# end user data
+
+#####

@@ -1,0 +1,13 @@
+# imt log
+s logheadsize 000000
+s logcolumns 23
+s logname /home/imt/logs/Hyunglae/20171002/S38_pass1 correct.dat
+s logversion 2.0
+s logdate "Mon Oct 2 13:27:07 EDT 2017"
+s logidate 1506965227
+
+# begin user data
+
+# end user data
+
+#####
