@@ -158,6 +158,8 @@ set cmdlist {
     {so_f64 ankle_damp &ob->ankle.damp 1}
     {so_f64 ankle_stiff_DP &ob->ankle.stiff_DP 1}
     {so_f64 ankle_stiff_IE &ob->ankle.stiff_IE 1}
+    {so_f64 ankle_stiff_k12 &ob->ankle.stiff_k12 1}
+    {so_f64 ankle_stiff_k21 &ob->ankle.stiff_k21 1}
     {so_f64 ankle_damp_DP &ob->ankle.damp_DP 1}
     {so_f64 ankle_damp_IE &ob->ankle.damp_IE 1}
     {so_f64 ankle_varDamp_K &ob->ankle.varDamp_K 1}
@@ -207,6 +209,7 @@ set cmdlist {
     {so_f64 ankle_dp_fvel &ob->ankle.fvel.dp 1}
     {so_f64 ankle_dp_faccel &ob->ankle.faccel.dp 1}
     {so_f64 ankle_dp_ref_pos &ob->ankle.ref_pos.dp 1}
+    {so_f64 ankle_dp_stiff_center &ob->ankle.stiff_center.dp 1}
     {so_f64 ankle_dp_accel &ob->ankle.accel.dp 1}
     {so_f64 ankle_dp_torque &ob->ankle.torque.dp 1}
     {so_f64 ankle_dp_moment_cmd &ob->ankle.moment_cmd.dp 1}
@@ -218,6 +221,7 @@ set cmdlist {
     {so_f64 ankle_ie_fvel &ob->ankle.fvel.ie 1}
     {so_f64 ankle_ie_faccel &ob->ankle.faccel.ie 1}
     {so_f64 ankle_ie_ref_pos &ob->ankle.ref_pos.ie 1}
+    {so_f64 ankle_ie_stiff_center &ob->ankle.stiff_center.ie 1}
     {so_f64 ankle_ie_accel &ob->ankle.accel.ie 1}
     {so_f64 ankle_ie_torque &ob->ankle.torque.ie 1}
     {so_f64 ankle_ie_moment_cmd &ob->ankle.moment_cmd.ie 1}
