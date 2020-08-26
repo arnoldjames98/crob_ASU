@@ -488,3 +488,21 @@ ankle_ctl_independent(u32 id)
  //   TIE = -((stiff_IE * (IE - ob->ankle.ref_pos.ie)) + (damp_IE * OIE) + (torque_IE));
     TIE = -((stiff_IE * (IE - ob->ankle.ref_pos.ie)) + (damp_IE * OIE));
 }
+
+//JA (20200826)
+void
+ankle_stiff_ctl(u32 id)
+{
+
+    f64 stiff_DP, stiff_IE, damp_DP, damp_IE, torque_IE;
+
+    stiff_DP = ob->ankle.stiff_DP;
+    stiff_IE = ob->ankle.stiff_IE;
+    damp_DP = ob->ankle.damp_DP;
+    damp_IE = ob->ankle.damp_IE;
+ //   torque_IE = ob->ankle.torque_IE;
+
+    TDP = -((stiff_DP * (DP - ob->ankle.ref_pos.dp)) + (damp_DP * ODP) - (ob->ankle.gravityTorque));
+ //   TIE = -((stiff_IE * (IE - ob->ankle.ref_pos.ie)) + (damp_IE * OIE) + (torque_IE));
+    TIE = -((stiff_IE * (IE - ob->ankle.ref_pos.ie)) + (damp_IE * OIE));
+}
