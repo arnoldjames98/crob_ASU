@@ -275,6 +275,7 @@ typedef struct ankle_ob_s {                      // ankle world coordinates
     ankle_dof norm;
     ankle_dof offset;
     ankle_dof ref_pos;  // Added to cmdlist.tcl by JA (20190916)
+    ankle_dof stiff_center;     // JA (20200826)
     ankle_dof moment_cmd;
     ankle_dof accel;
     ankle_dof ft_torque;
@@ -286,6 +287,8 @@ typedef struct ankle_ob_s {                      // ankle world coordinates
     f64 damp;
     f64 stiff_DP;	// HL (20160525)
     f64 stiff_IE;       // HL (20160525)
+    f64 stiff_k12;      // JA (20200826)
+    f64 stiff_k21;      // JA (20200826)
     f64 damp_DP;	// HL (20160525)
     f64 damp_IE;       // HL (20160525)
     f64 target_Distance;    // HH (20160713), updated JA (20190305)

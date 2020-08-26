@@ -494,15 +494,20 @@ void
 ankle_stiff_ctl(u32 id)
 {
 
-    f64 stiff_DP, stiff_IE, damp_DP, damp_IE, torque_IE;
+    f64 stiff_DP, stiff_IE, stiff_k12, stiff_k21, damp_DP, damp_IE, torque_IE, pos_equil_DP, pos_equil_IE;
 
     stiff_DP = ob->ankle.stiff_DP;
     stiff_IE = ob->ankle.stiff_IE;
+    stiff_k12 = ob->ankle.stiff_k12;
+    stiff_k21 = ob->ankle.stiff_k21;
     damp_DP = ob->ankle.damp_DP;
     damp_IE = ob->ankle.damp_IE;
- //   torque_IE = ob->ankle.torque_IE;
 
-    TDP = -((stiff_DP * (DP - ob->ankle.ref_pos.dp)) + (damp_DP * ODP) - (ob->ankle.gravityTorque));
- //   TIE = -((stiff_IE * (IE - ob->ankle.ref_pos.ie)) + (damp_IE * OIE) + (torque_IE));
-    TIE = -((stiff_IE * (IE - ob->ankle.ref_pos.ie)) + (damp_IE * OIE));
+    // Calculate the location to place the stiffness equilibrium
+    pos_equil_DP = DP - ob->ankle.ref_pos.dp + ob->ankle.stiff_center.dp;
+    pos_equil_IE = IE - ob->ankle.ref_pos.ie + ob->ankle.stiff_center.ie;
+
+    // Calculate the output torques
+    TDP = -(((stiff_DP * pos_equil_DP) + (stiff_k21 * pos_equil_IE)) + (damp_DP * ODP) - (ob->ankle.gravityTorque));
+    TIE = -(((stiff_IE * pos_equil_IE) + (stiff_k12 * pos_equil_DP)) + (damp_IE * OIE));
 }
