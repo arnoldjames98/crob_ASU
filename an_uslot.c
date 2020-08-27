@@ -504,8 +504,10 @@ ankle_stiff_ctl(u32 id)
     damp_IE = ob->ankle.damp_IE;
 
     // Calculate the location to place the stiffness equilibrium
-    pos_equil_DP = DP - ob->ankle.ref_pos.dp + ob->ankle.stiff_center.dp;
-    pos_equil_IE = IE - ob->ankle.ref_pos.ie + ob->ankle.stiff_center.ie;
+    //pos_equil_DP = DP - ob->ankle.ref_pos.dp + ob->ankle.stiff_center.dp;
+    //pos_equil_IE = IE - ob->ankle.ref_pos.ie + ob->ankle.stiff_center.ie;
+    pos_equil_DP = ob->ankle.stiff_center.dp - ob->ankle.ref_pos.dp;
+    pos_equil_IE = ob->ankle.stiff_center.ie - ob->ankle.ref_pos.ie;
 
     // Calculate the output torques
     TDP = -(((stiff_DP * pos_equil_DP) + (stiff_k21 * pos_equil_IE)) + (damp_DP * ODP) - (ob->ankle.gravityTorque));
