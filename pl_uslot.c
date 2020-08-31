@@ -46,6 +46,7 @@ void planar_req_pos_ctl(u32);
 void ankle_ped_ctl(u32);
 void ankle_Fitts_ctl(u32);
 void ankle_ctl_independent(u32);		// HL (20160525)
+void ankle_stiff_ctl(u32);        // JA (20200831)
 
 void
 init_slot_fns(void)
@@ -81,6 +82,7 @@ init_slot_fns(void)
     ob->slot_fns[28] = ankle_ped_ctl;
     ob->slot_fns[29] = ankle_Fitts_ctl;
     ob->slot_fns[30] = ankle_ctl_independent; 
+    ob->slot_fns[31] = ankle_stiff_ctl; 
 }
 
 #define X ob->pos.x

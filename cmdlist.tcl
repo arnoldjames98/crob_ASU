@@ -168,7 +168,6 @@ set cmdlist {
     {so_f64 ankle_target_Distance_DP &ob->ankle.target_Distance_DP 1}
     {so_u32 ankle_gravityCompMode &ob->ankle.gravityCompMode 1}
     {so_f64 ankle_gravityTorque &ob->ankle.gravityTorque 1}
-    {so_f64 ankle_torque_IE &ob->ankle.torque_IE 1}
  
     {so_u32 ankle_ueimf &ob->ankle.ueimf 1}
     {so_f64 ankle_rl_pfomax &ob->ankle.rl_pfomax 1}

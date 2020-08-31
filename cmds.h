@@ -172,536 +172,535 @@ struct cmd_s {
 	{so_f64, "ankle_target_Distance_DP", NULL,  1}, /* 139 */
 	{so_u32, "ankle_gravityCompMode", NULL,  1}, /* 140 */
 	{so_f64, "ankle_gravityTorque", NULL,  1}, /* 141 */
-	{so_f64, "ankle_torque_IE", NULL,  1}, /* 142 */
-	{so_u32, "ankle_ueimf", NULL,  1}, /* 143 */
-	{so_f64, "ankle_rl_pfomax", NULL,  1}, /* 144 */
-	{so_f64, "ankle_rl_pfotest", NULL,  1}, /* 145 */
-	{so_u32, "ankle_left_enc_channel", NULL,  1}, /* 146 */
-	{so_f64, "ankle_left_disp", NULL,  1}, /* 147 */
-	{so_f64, "ankle_left_devtrq", NULL,  1}, /* 148 */
-	{so_f64, "ankle_left_xform", NULL,  1}, /* 149 */
-	{so_f64, "ankle_left_volts", NULL,  1}, /* 150 */
-	{so_f64, "ankle_left_force", NULL,  1}, /* 151 */
-	{so_f64, "ankle_left_test_volts", NULL,  1}, /* 152 */
-	{so_u32, "ankle_left_ao_channel", NULL,  1}, /* 153 */
-	{so_u32, "ankle_left_rot_enc_channel", NULL,  1}, /* 154 */
-	{so_f64, "ankle_left_rot_disp", NULL,  1}, /* 155 */
-	{so_f64, "ankle_left_rot_lin_disp", NULL,  1}, /* 156 */
-	{so_f64, "ankle_left_vel", NULL,  1}, /* 157 */
-	{so_f64, "ankle_left_rot_lin_vel", NULL,  1}, /* 158 */
-	{so_u32, "ankle_right_enc_channel", NULL,  1}, /* 159 */
-	{so_f64, "ankle_right_disp", NULL,  1}, /* 160 */
-	{so_f64, "ankle_right_devtrq", NULL,  1}, /* 161 */
-	{so_f64, "ankle_right_xform", NULL,  1}, /* 162 */
-	{so_f64, "ankle_right_volts", NULL,  1}, /* 163 */
-	{so_f64, "ankle_right_force", NULL,  1}, /* 164 */
-	{so_f64, "ankle_right_test_volts", NULL,  1}, /* 165 */
-	{so_u32, "ankle_right_ao_channel", NULL,  1}, /* 166 */
-	{so_u32, "ankle_right_rot_enc_channel", NULL,  1}, /* 167 */
-	{so_f64, "ankle_right_rot_disp", NULL,  1}, /* 168 */
-	{so_f64, "ankle_right_rot_lin_disp", NULL,  1}, /* 169 */
-	{so_f64, "ankle_right_vel", NULL,  1}, /* 170 */
-	{so_f64, "ankle_right_rot_lin_vel", NULL,  1}, /* 171 */
-	{so_u32, "have_ankle", NULL,  1}, /* 172 */
-	{so_f64, "ankle_dp_pos", NULL,  1}, /* 173 */
-	{so_f64, "ankle_dp_vel", NULL,  1}, /* 174 */
-	{so_f64, "ankle_dp_fvel", NULL,  1}, /* 175 */
-	{so_f64, "ankle_dp_faccel", NULL,  1}, /* 176 */
-	{so_f64, "ankle_dp_ref_pos", NULL,  1}, /* 177 */
-	{so_f64, "ankle_dp_stiff_center", NULL,  1}, /* 178 */
-	{so_f64, "ankle_dp_accel", NULL,  1}, /* 179 */
-	{so_f64, "ankle_dp_torque", NULL,  1}, /* 180 */
-	{so_f64, "ankle_dp_moment_cmd", NULL,  1}, /* 181 */
-	{so_f64, "ankle_dp_offset", NULL,  1}, /* 182 */
-	{so_f64, "ankle_dp_norm", NULL,  1}, /* 183 */
-	{so_f64, "ankle_dp_back", NULL,  1}, /* 184 */
-	{so_f64, "ankle_ie_pos", NULL,  1}, /* 185 */
-	{so_f64, "ankle_ie_vel", NULL,  1}, /* 186 */
-	{so_f64, "ankle_ie_fvel", NULL,  1}, /* 187 */
-	{so_f64, "ankle_ie_faccel", NULL,  1}, /* 188 */
-	{so_f64, "ankle_ie_ref_pos", NULL,  1}, /* 189 */
-	{so_f64, "ankle_ie_stiff_center", NULL,  1}, /* 190 */
-	{so_f64, "ankle_ie_accel", NULL,  1}, /* 191 */
-	{so_f64, "ankle_ie_torque", NULL,  1}, /* 192 */
-	{so_f64, "ankle_ie_moment_cmd", NULL,  1}, /* 193 */
-	{so_f64, "ankle_ie_offset", NULL,  1}, /* 194 */
-	{so_f64, "ankle_ie_norm", NULL,  1}, /* 195 */
-	{so_f64, "ankle_ie_back", NULL,  1}, /* 196 */
-	{so_f64, "ankle_accel_mag", NULL,  1}, /* 197 */
-	{so_f64, "ankle_vel_mag", NULL,  1}, /* 198 */
-	{so_f64, "ankle_safety_vel", NULL,  1}, /* 199 */
-	{so_f64, "ankle_safety_accel", NULL,  1}, /* 200 */
-	{so_f64, "ankle_trans_ratio", NULL,  1}, /* 201 */
-	{so_f64, "ankle_trans_lead", NULL,  1}, /* 202 */
-	{so_f64, "ankle_ankle_ball_length", NULL,  1}, /* 203 */
-	{so_f64, "ankle_ball_ball_width", NULL,  1}, /* 204 */
-	{so_f64, "ankle_av_actuator_length", NULL,  1}, /* 205 */
-	{so_f64, "ankle_av_shin_length", NULL,  1}, /* 206 */
-	{so_f64, "ankle_enc_xform", NULL,  1}, /* 207 */
-	{so_f64, "ankle_slip_thresh", NULL,  1}, /* 208 */
-	{so_u32, "ankle_uei_ao_board_handle", NULL,  1}, /* 209 */
-	{so_u32, "ankle_knee_channel", NULL,  1}, /* 210 */
-	{so_f64, "ankle_knee_raw", NULL,  1}, /* 211 */
-	{so_f64, "ankle_knee_xform1", NULL,  1}, /* 212 */
-	{so_f64, "ankle_knee_xform2", NULL,  1}, /* 213 */
-	{so_f64, "ankle_knee_bias", NULL,  1}, /* 214 */
-	{so_f64, "ankle_knee_gain", NULL,  1}, /* 215 */
-	{so_f64, "ankle_knee_angle", NULL,  1}, /* 216 */
-	{so_f64, "linear_stiff", NULL,  1}, /* 217 */
-	{so_f64, "linear_damp", NULL,  1}, /* 218 */
-	{so_f64, "linear_pfomax", NULL,  1}, /* 219 */
-	{so_f64, "linear_pfotest", NULL,  1}, /* 220 */
-	{so_u32, "linear_adap_going_up", NULL,  1}, /* 221 */
-	{so_u32, "linear_enc_channel", NULL,  1}, /* 222 */
-	{so_f64, "linear_disp", NULL,  1}, /* 223 */
-	{so_f64, "linear_devfrc", NULL,  1}, /* 224 */
-	{so_f64, "linear_xform", NULL,  1}, /* 225 */
-	{so_f64, "linear_volts", NULL,  1}, /* 226 */
-	{so_f64, "linear_test_volts", NULL,  1}, /* 227 */
-	{so_u32, "linear_ao_channel", NULL,  1}, /* 228 */
-	{so_f64, "linear_limit_volts", NULL,  1}, /* 229 */
-	{so_u32, "linear_limit_channel", NULL,  1}, /* 230 */
-	{so_u32, "have_linear", NULL,  1}, /* 231 */
-	{so_f64, "linear_pos", NULL,  1}, /* 232 */
-	{so_f64, "linear_vel", NULL,  1}, /* 233 */
-	{so_f64, "linear_fvel", NULL,  1}, /* 234 */
-	{so_f64, "linear_force", NULL,  1}, /* 235 */
-	{so_f64, "linear_force_bias", NULL,  1}, /* 236 */
-	{so_f64, "linear_offset", NULL,  1}, /* 237 */
-	{so_f64, "linear_ref_pos", NULL,  1}, /* 238 */
-	{so_f64, "linear_back", NULL,  1}, /* 239 */
-	{so_f64, "linear_norm", NULL,  1}, /* 240 */
-	{so_f64, "linear_gear_ratio", NULL,  1}, /* 241 */
-	{so_u32, "linear_uei_ao_board_handle", NULL,  1}, /* 242 */
-	{so_f64, "hand_stiff", NULL,  1}, /* 243 */
-	{so_f64, "hand_damp", NULL,  1}, /* 244 */
-	{so_f64, "hand_pfomax", NULL,  1}, /* 245 */
-	{so_f64, "hand_pfotest", NULL,  1}, /* 246 */
-	{so_u32, "hand_adap_going_up", NULL,  1}, /* 247 */
-	{so_u32, "hand_enc_channel", NULL,  1}, /* 248 */
-	{so_f64, "hand_disp", NULL,  1}, /* 249 */
-	{so_f64, "hand_devfrc", NULL,  1}, /* 250 */
-	{so_f64, "hand_xform", NULL,  1}, /* 251 */
-	{so_f64, "hand_bias", NULL,  1}, /* 252 */
-	{so_f64, "hand_volts", NULL,  1}, /* 253 */
-	{so_f64, "hand_test_volts", NULL,  1}, /* 254 */
-	{so_u32, "hand_ao_channel", NULL,  1}, /* 255 */
-	{so_f64, "hand_limit_volts", NULL,  1}, /* 256 */
-	{so_u32, "hand_limit_channel", NULL,  1}, /* 257 */
-	{so_u32, "have_hand", NULL,  1}, /* 258 */
-	{so_f64, "hand_pos", NULL,  1}, /* 259 */
-	{so_f64, "hand_vel", NULL,  1}, /* 260 */
-	{so_f64, "hand_fvel", NULL,  1}, /* 261 */
-	{so_f64, "hand_force", NULL,  1}, /* 262 */
-	{so_f64, "hand_grasp", NULL,  1}, /* 263 */
-	{so_f64, "hand_force_bias", NULL,  1}, /* 264 */
-	{so_f64, "hand_ref_pos", NULL,  1}, /* 265 */
-	{so_f64, "hand_gear_ratio", NULL,  1}, /* 266 */
-	{so_f64, "hand_gear_xform", NULL,  1}, /* 267 */
-	{so_f64, "hand_gear_disp_xform", NULL,  1}, /* 268 */
-	{so_f64, "hand_gear_offset", NULL,  1}, /* 269 */
-	{so_f64, "hand_gear_span", NULL,  1}, /* 270 */
-	{so_f64, "hand_gear_gap", NULL,  1}, /* 271 */
-	{so_u32, "hand_uei_ao_board_handle", NULL,  1}, /* 272 */
-	{so_f64, "hand_active_power", NULL,  1}, /* 273 */
-	{so_u32, "hand_npoints", NULL,  1}, /* 274 */
-	{so_f64, "ain_bias_comp", NULL,  4}, /* 275 */
-	{so_u32, "ain_cfg", NULL,  1}, /* 276 */
-	{so_u32, "ain_slowbit", NULL,  1}, /* 277 */
-	{so_s32, "ain_got_samples", NULL,  1}, /* 278 */
-	{so_s32, "ain_ret", NULL,  1}, /* 279 */
-	{so_s32, "n_ueidaq_boards", NULL,  1}, /* 280 */
-	{so_s32, "uei_board", NULL,  4}, /* 281 */
-	{so_u32, "busy", NULL,  1}, /* 282 */
-	{so_f64, "curl", NULL,  1}, /* 283 */
-	{so_f64, "damp", NULL,  1}, /* 284 */
-	{so_f64, "const_force_x", NULL,  1}, /* 285 */
-	{so_f64, "const_force_y", NULL,  1}, /* 286 */
-	{so_u32, "quit", NULL,  1}, /* 287 */
-	{so_u32, "doinit", NULL,  1}, /* 288 */
-	{so_u32, "didinit", NULL,  1}, /* 289 */
-	{so_u32, "butcutoff", NULL,  1}, /* 290 */
-	{so_s32, "ddfifo", NULL,  1}, /* 291 */
-	{so_s32, "cififo", NULL,  1}, /* 292 */
-	{so_s32, "dififo", NULL,  1}, /* 293 */
-	{so_s32, "dofifo", NULL,  1}, /* 294 */
-	{so_s32, "eofifo", NULL,  1}, /* 295 */
-	{so_u32, "fifolen", NULL,  1}, /* 296 */
-	{so_s32, "tcfifo", NULL,  1}, /* 297 */
-	{so_s32, "ftfifo", NULL,  1}, /* 298 */
-	{so_u32, "ntickfifo", NULL,  1}, /* 299 */
-	{so_u32, "fttickfifo", NULL,  1}, /* 300 */
-	{so_f64, "s_torque", NULL,  1}, /* 301 */
-	{so_f64, "e_torque", NULL,  1}, /* 302 */
-	{so_f64, "s_volts", NULL,  1}, /* 303 */
-	{so_f64, "e_volts", NULL,  1}, /* 304 */
-	{so_f64, "link_s", NULL,  1}, /* 305 */
-	{so_f64, "link_e", NULL,  1}, /* 306 */
-	{so_u32, "have_planar", NULL,  1}, /* 307 */
-	{so_u32, "have_uei", NULL,  1}, /* 308 */
-	{so_u32, "have_tach", NULL,  1}, /* 309 */
-	{so_u32, "have_ft", NULL,  1}, /* 310 */
-	{so_u32, "have_grasp", NULL,  1}, /* 311 */
-	{so_u32, "have_accel", NULL,  1}, /* 312 */
-	{so_u32, "have_planar_incenc", NULL,  1}, /* 313 */
-	{so_u32, "have_planar_ao8", NULL,  1}, /* 314 */
-	{so_u32, "have_mf_aout_for_dout", NULL,  1}, /* 315 */
-	{so_u32, "ankle_debug_position", NULL,  1}, /* 316 */
-	{so_u32, "have_thermal_model", NULL,  1}, /* 317 */
-	{so_u32, "Hz", NULL,  1}, /* 318 */
-	{so_u32, "i", NULL,  1}, /* 319 */
-	{so_u32, "fasti", NULL,  1}, /* 320 */
-	{so_u32, "fastHz", NULL,  1}, /* 321 */
-	{so_u32, "fastirate", NULL,  1}, /* 322 */
-	{so_f64, "fastrate", NULL,  1}, /* 323 */
-	{so_u32, "ovsample", NULL,  1}, /* 324 */
-	{so_u32, "irate", NULL,  1}, /* 325 */
-	{so_f64, "disp", NULL,  32}, /* 326 */
-	{so_u32, "ndisp", NULL,  1}, /* 327 */
-	{so_f64, "log", NULL,  32}, /* 328 */
-	{so_u32, "nlog", NULL,  1}, /* 329 */
-	{so_u32, "logfnid", NULL,  1}, /* 330 */
-	{so_f64, "refin", NULL,  32}, /* 331 */
-	{so_u32, "nwref", NULL,  1}, /* 332 */
-	{so_u32, "nrref", NULL,  1}, /* 333 */
-	{so_u32, "reffnid", NULL,  1}, /* 334 */
-	{so_u32, "refri", NULL,  1}, /* 335 */
-	{so_u32, "refwi", NULL,  1}, /* 336 */
-	{so_u32, "refterm", NULL,  1}, /* 337 */
-	{so_u32, "ref_switchback_go", NULL,  1}, /* 338 */
-	{so_f64, "offset_x", NULL,  1}, /* 339 */
-	{so_f64, "offset_y", NULL,  1}, /* 340 */
-	{so_u32, "paused", NULL,  1}, /* 341 */
-	{so_u32, "fault", NULL,  1}, /* 342 */
-	{so_s32, "stiffener", NULL,  1}, /* 343 */
-	{so_s32, "stiff_delta", NULL,  1}, /* 344 */
-	{so_u32, "no_motors", NULL,  1}, /* 345 */
-	{so_f64, "pi", NULL,  1}, /* 346 */
-	{so_f64, "pfomax", NULL,  1}, /* 347 */
-	{so_f64, "pfotest", NULL,  1}, /* 348 */
-	{so_f64, "impulse_thresh_volts", NULL,  1}, /* 349 */
-	{so_f64, "s_dvolts", NULL,  1}, /* 350 */
-	{so_f64, "e_dvolts", NULL,  1}, /* 351 */
-	{so_f64, "rate", NULL,  1}, /* 352 */
-	{so_f64, "restart_damp", NULL,  1}, /* 353 */
-	{so_u32, "restart_go", NULL,  1}, /* 354 */
-	{so_u32, "restart_Hz", NULL,  1}, /* 355 */
-	{so_u32, "restart_ovsample", NULL,  1}, /* 356 */
-	{so_f64, "restart_stiff", NULL,  1}, /* 357 */
-	{so_u32, "no_safety_check", NULL,  1}, /* 358 */
-	{so_f64, "safety_damping_nms", NULL,  1}, /* 359 */
-	{so_f64, "safety_pos", NULL,  1}, /* 360 */
-	{so_f64, "safety_torque", NULL,  1}, /* 361 */
-	{so_f64, "safety_ramp", NULL,  1}, /* 362 */
-	{so_f64, "safety_vel", NULL,  1}, /* 363 */
-	{so_u32, "safety_planar_just_crossed_back", NULL,  1}, /* 364 */
-	{so_u32, "safety_was_planar_damping", NULL,  1}, /* 365 */
-	{so_u32, "safety_damp_ret_ticks", NULL,  1}, /* 366 */
-	{so_f64, "safety_damp_ret_secs", NULL,  1}, /* 367 */
-	{so_u32, "samplenum", NULL,  1}, /* 368 */
-	{so_u32, "vibrate", NULL,  1}, /* 369 */
-	{so_s32, "xvibe", NULL,  1}, /* 370 */
-	{so_s32, "yvibe", NULL,  1}, /* 371 */
-	{so_f64, "tsvibe", NULL,  1}, /* 372 */
-	{so_f64, "tevibe", NULL,  1}, /* 373 */
-	{so_f64, "tvibamp", NULL,  1}, /* 374 */
-	{so_u32, "test_raw_torque", NULL,  1}, /* 375 */
-	{so_f64, "raw_torque_volts_s", NULL,  1}, /* 376 */
-	{so_f64, "raw_torque_volts_e", NULL,  1}, /* 377 */
-	{so_u32, "test_no_torque", NULL,  1}, /* 378 */
-	{so_f64, "sin_amplitude", NULL,  1}, /* 379 */
-	{so_f64, "sin_period", NULL,  1}, /* 380 */
-	{so_u32, "sin_which_motor", NULL,  1}, /* 381 */
-	{so_u32, "sim_sensors", NULL,  1}, /* 382 */
-	{so_f64, "sim_pos_x", NULL,  1}, /* 383 */
-	{so_f64, "sim_pos_y", NULL,  1}, /* 384 */
-	{so_f64, "sim_wr_pos_fe", NULL,  1}, /* 385 */
-	{so_f64, "sim_wr_pos_ps", NULL,  1}, /* 386 */
-	{so_f64, "sim_wr_pos_aa", NULL,  1}, /* 387 */
-	{so_f64, "sim_vel_x", NULL,  1}, /* 388 */
-	{so_f64, "sim_vel_y", NULL,  1}, /* 389 */
-	{so_f64, "sim_wr_vel_fe", NULL,  1}, /* 390 */
-	{so_f64, "sim_wr_vel_ps", NULL,  1}, /* 391 */
-	{so_f64, "sim_wr_vel_aa", NULL,  1}, /* 392 */
-	{so_f64, "pl_req_pos_x", NULL,  1}, /* 393 */
-	{so_f64, "pl_req_pos_y", NULL,  1}, /* 394 */
-	{so_u32, "pos_error_mod", NULL,  1}, /* 395 */
-	{so_f64, "pos_error_dx", NULL,  1}, /* 396 */
-	{so_f64, "pos_error_dy", NULL,  1}, /* 397 */
-	{so_u32, "slot_id", NULL,  1}, /* 398 */
-	{so_u32, "slot_i", NULL,  1}, /* 399 */
-	{so_u32, "slot_incr", NULL,  1}, /* 400 */
-	{so_u32, "slot_term", NULL,  1}, /* 401 */
-	{so_u32, "slot_termi", NULL,  1}, /* 402 */
-	{so_f64, "slot_b0_x", NULL,  1}, /* 403 */
-	{so_f64, "slot_b0_y", NULL,  1}, /* 404 */
-	{so_f64, "slot_b0_w", NULL,  1}, /* 405 */
-	{so_f64, "slot_b0_h", NULL,  1}, /* 406 */
-	{so_f64, "slot_b1_x", NULL,  1}, /* 407 */
-	{so_f64, "slot_b1_y", NULL,  1}, /* 408 */
-	{so_f64, "slot_b1_w", NULL,  1}, /* 409 */
-	{so_f64, "slot_b1_h", NULL,  1}, /* 410 */
-	{so_u32, "slot_fnid", NULL,  1}, /* 411 */
-	{so_f64, "slot_rot", NULL,  1}, /* 412 */
-	{so_u32, "slot_go", NULL,  1}, /* 413 */
-	{so_u32, "slot_running", NULL,  1}, /* 414 */
-	{so_u32, "slot_max", NULL,  1}, /* 415 */
-	{so_u32, "slot0_id", NULL,  1}, /* 416 */
-	{so_u32, "slot0_i", NULL,  1}, /* 417 */
-	{so_u32, "slot0_incr", NULL,  1}, /* 418 */
-	{so_u32, "slot0_term", NULL,  1}, /* 419 */
-	{so_u32, "slot0_termi", NULL,  1}, /* 420 */
-	{so_f64, "slot0_b0_x", NULL,  1}, /* 421 */
-	{so_f64, "slot0_b0_y", NULL,  1}, /* 422 */
-	{so_f64, "slot0_b0_w", NULL,  1}, /* 423 */
-	{so_f64, "slot0_b0_h", NULL,  1}, /* 424 */
-	{so_f64, "slot0_b1_x", NULL,  1}, /* 425 */
-	{so_f64, "slot0_b1_y", NULL,  1}, /* 426 */
-	{so_f64, "slot0_b1_w", NULL,  1}, /* 427 */
-	{so_f64, "slot0_b1_h", NULL,  1}, /* 428 */
-	{so_f64, "slot0_bcur_x", NULL,  1}, /* 429 */
-	{so_f64, "slot0_bcur_y", NULL,  1}, /* 430 */
-	{so_f64, "slot0_bcur_w", NULL,  1}, /* 431 */
-	{so_f64, "slot0_bcur_h", NULL,  1}, /* 432 */
-	{so_u32, "slot0_fnid", NULL,  1}, /* 433 */
-	{so_f64, "slot0_rot", NULL,  1}, /* 434 */
-	{so_u32, "slot0_running", NULL,  1}, /* 435 */
-	{so_u32, "slot0_go", NULL,  1}, /* 436 */
-	{so_f64, "slot1_b0_x", NULL,  1}, /* 437 */
-	{so_f64, "slot1_b0_y", NULL,  1}, /* 438 */
-	{so_f64, "slot1_b0_w", NULL,  1}, /* 439 */
-	{so_f64, "slot1_b0_h", NULL,  1}, /* 440 */
-	{so_f64, "pm_active_power", NULL,  1}, /* 441 */
-	{so_f64, "pm_robot_power", NULL,  1}, /* 442 */
-	{so_f64, "pm_min_jerk_deviation", NULL,  1}, /* 443 */
-	{so_f64, "pm_min_jerk_dgraph", NULL,  1}, /* 444 */
-	{so_f64, "pm_jerkmag", NULL,  1}, /* 445 */
-	{so_f64, "pm_dist_straight_line", NULL,  1}, /* 446 */
-	{so_f64, "pm_max_dist_along_axis", NULL,  1}, /* 447 */
-	{so_f64, "pm_min_dist_from_target", NULL,  1}, /* 448 */
-	{so_f64, "pm_max_vel", NULL,  1}, /* 449 */
-	{so_u32, "pm_npoints", NULL,  1}, /* 450 */
-	{so_u32, "pm_five_d", NULL,  1}, /* 451 */
-	{so_u32, "done_npoints", NULL,  1}, /* 452 */
-	{so_f64, "done_active_power", NULL,  1}, /* 453 */
-	{so_f64, "done_robot_power", NULL,  1}, /* 454 */
-	{so_f64, "done_min_jerk_deviation", NULL,  1}, /* 455 */
-	{so_f64, "done_min_jerk_dgraph", NULL,  1}, /* 456 */
-	{so_f64, "done_jerkmag", NULL,  1}, /* 457 */
-	{so_f64, "done_max_vel", NULL,  1}, /* 458 */
-	{so_f64, "done_dist_straight_line_sq", NULL,  1}, /* 459 */
-	{so_f64, "done_max_dist_along_axis", NULL,  1}, /* 460 */
-	{so_f64, "done_min_dist_from_target", NULL,  1}, /* 461 */
-	{so_f64, "done_hand_pct_in", NULL,  1}, /* 462 */
-	{so_f64, "done_hand_pct_out", NULL,  1}, /* 463 */
-	{so_f64, "scr", NULL,  64}, /* 464 */
-	{so_f64, "scr0", NULL,  1}, /* 465 */
-	{so_f64, "scr1", NULL,  1}, /* 466 */
-	{so_f64, "scr2", NULL,  1}, /* 467 */
-	{so_f64, "scr3", NULL,  1}, /* 468 */
-	{so_f64, "scr4", NULL,  1}, /* 469 */
-	{so_f64, "scr5", NULL,  1}, /* 470 */
-	{so_f64, "scr6", NULL,  1}, /* 471 */
-	{so_f64, "scr7", NULL,  1}, /* 472 */
-	{so_f64, "aodiff", NULL,  16}, /* 473 */
-	{so_f64, "aocum", NULL,  16}, /* 474 */
-	{so_f64, "aorms", NULL,  16}, /* 475 */
-	{so_f64, "aocum1", NULL,  16}, /* 476 */
-	{so_f64, "aoavg", NULL,  16}, /* 477 */
-	{so_s32, "aocount", NULL,  1}, /* 478 */
-	{so_f64, "pl_stopspan", NULL,  1}, /* 479 */
-	{so_f64, "pl_linkspan", NULL,  1}, /* 480 */
-	{so_f64, "pl_vbig", NULL,  1}, /* 481 */
-	{so_f64, "pl_vsmall", NULL,  1}, /* 482 */
-	{so_f64, "pl_vtiny", NULL,  1}, /* 483 */
-	{so_f64, "pl_slop", NULL,  1}, /* 484 */
-	{so_f64, "ha_vbig", NULL,  1}, /* 485 */
-	{so_f64, "ha_vsmall", NULL,  1}, /* 486 */
-	{so_f64, "ha_slop", NULL,  1}, /* 487 */
-	{so_f64, "wr_diffslop", NULL,  1}, /* 488 */
-	{so_f64, "wr_psslop", NULL,  1}, /* 489 */
-	{so_f64, "wr_rspan", NULL,  1}, /* 490 */
-	{so_f64, "wr_lspan", NULL,  1}, /* 491 */
-	{so_f64, "wr_psspan", NULL,  1}, /* 492 */
-	{so_f64, "wr_vbig", NULL,  1}, /* 493 */
-	{so_f64, "wr_vsmall", NULL,  1}, /* 494 */
-	{so_u16, "dienc", NULL,  4}, /* 495 */
-	{so_s32, "dienc_vel", NULL,  2}, /* 496 */
-	{so_s32, "dienc_accel", NULL,  2}, /* 497 */
-	{so_u32, "diovs", NULL,  1}, /* 498 */
-	{so_u16, "dout_buf", NULL,  4}, /* 499 */
-	{so_u16, "dout0", NULL,  1}, /* 500 */
-	{so_u16, "dout1", NULL,  1}, /* 501 */
-	{so_u16, "adc", NULL,  64}, /* 502 */
-	{so_u16, "dac", NULL,  32}, /* 503 */
-	{so_f64, "adcvolts", NULL,  64}, /* 504 */
-	{so_f64, "emg1", NULL,  64}, /* 505 */
-	{so_f64, "emg2", NULL,  64}, /* 506 */
-	{so_f64, "emg3", NULL,  64}, /* 507 */
-	{so_f64, "emg4", NULL,  64}, /* 508 */
-	{so_f64, "adcmean", NULL,  64}, /* 509 */
-	{so_f64, "adcmed", NULL,  64}, /* 510 */
-	{so_f64, "dacvolts", NULL,  32}, /* 511 */
-	{so_u16, "distat", NULL,  2}, /* 512 */
-	{so_u32, "ft_flip", NULL,  1}, /* 513 */
-	{so_u32, "ft_vert", NULL,  1}, /* 514 */
-	{so_u32, "ft_have_rotmat", NULL,  1}, /* 515 */
-	{so_u32, "ft_rotmat_setup_done", NULL,  1}, /* 516 */
-	{so_f64, "ft_rotx", NULL,  1}, /* 517 */
-	{so_f64, "ft_roty", NULL,  1}, /* 518 */
-	{so_f64, "ft_rotz", NULL,  1}, /* 519 */
-	{so_u32, "ft_righthand", NULL,  1}, /* 520 */
-	{so_f64, "ft_pre_jacx", NULL,  1}, /* 521 */
-	{so_f64, "ft_pre_jacy", NULL,  1}, /* 522 */
-	{so_f64, "ft_pre_jacz", NULL,  1}, /* 523 */
-	{so_f64, "ft_rotmat", NULL,  9}, /* 524 */
-	{so_u32, "ft_dobias", NULL,  1}, /* 525 */
-	{so_f64, "ft_offset", NULL,  1}, /* 526 */
-	{so_u32, "ft_channel", NULL,  6}, /* 527 */
-	{so_f64, "ft_raw", NULL,  6}, /* 528 */
-	{so_f64, "ft_curr", NULL,  6}, /* 529 */
-	{so_f64, "ft_prev", NULL,  6}, /* 530 */
-	{so_f64, "ft_filt", NULL,  6}, /* 531 */
-	{so_f64, "ft_sg", NULL,  6}, /* 532 */
-	{so_f64, "ft_prevf", NULL,  6}, /* 533 */
-	{so_f64, "ft_xworld", NULL,  1}, /* 534 */
-	{so_f64, "ft_yworld", NULL,  1}, /* 535 */
-	{so_f64, "ft_zworld", NULL,  1}, /* 536 */
-	{so_f64, "ft_xdev", NULL,  1}, /* 537 */
-	{so_f64, "ft_ydev", NULL,  1}, /* 538 */
-	{so_f64, "ft_zdev", NULL,  1}, /* 539 */
-	{so_f64, "ft_xmoment", NULL,  1}, /* 540 */
-	{so_f64, "ft_ymoment", NULL,  1}, /* 541 */
-	{so_f64, "ft_zmoment", NULL,  1}, /* 542 */
-	{so_f64, "ft_xymag", NULL,  1}, /* 543 */
-	{so_f64, "ft_cal", NULL,  36}, /* 544 */
-	{so_f64, "ft_scale", NULL,  6}, /* 545 */
-	{so_f64, "ft_bias", NULL,  6}, /* 546 */
-	{so_f64, "ft_cooked", NULL,  6}, /* 547 */
-	{so_f64, "ft_avg", NULL,  6}, /* 548 */
-	{so_f64, "ft_sghist0", NULL,  16}, /* 549 */
-	{so_u32, "ft_status", NULL,  1}, /* 550 */
-	{so_f64, "ft_cal01", NULL,  1}, /* 551 */
-	{so_f64, "ft_cal10", NULL,  1}, /* 552 */
-	{so_f64, "ft_cal11", NULL,  1}, /* 553 */
-	{so_u32, "accel_channel", NULL,  3}, /* 554 */
-	{so_f64, "accel_raw", NULL,  3}, /* 555 */
-	{so_f64, "accel_curr", NULL,  3}, /* 556 */
-	{so_f64, "accel_bias", NULL,  3}, /* 557 */
-	{so_f64, "accel_xform", NULL,  1}, /* 558 */
-	{so_f64, "accelx", NULL,  1}, /* 559 */
-	{so_f64, "accely", NULL,  1}, /* 560 */
-	{so_f64, "accelz", NULL,  1}, /* 561 */
-	{so_u32, "grasp_channel", NULL,  1}, /* 562 */
-	{so_f64, "grasp_raw", NULL,  1}, /* 563 */
-	{so_f64, "grasp_bias", NULL,  1}, /* 564 */
-	{so_f64, "grasp_cal", NULL,  1}, /* 565 */
-	{so_f64, "grasp_gain", NULL,  1}, /* 566 */
-	{so_f64, "grasp_force", NULL,  1}, /* 567 */
-	{so_u32, "have_can", NULL,  1}, /* 568 */
-	{so_s32, "can_fd", NULL,  1}, /* 569 */
-	{so_s32, "can_axis", NULL,  1}, /* 570 */
-	{so_s32, "can_value", NULL,  1}, /* 571 */
-	{so_s16, "can_analog1", NULL,  8}, /* 572 */
-	{so_s16, "can_analog2", NULL,  8}, /* 573 */
-	{so_s32, "can_pos_raw", NULL,  8}, /* 574 */
-	{so_s32, "can_pos2_raw", NULL,  8}, /* 575 */
-	{so_s32, "can_vel_raw", NULL,  8}, /* 576 */
-	{so_s32, "can_read_error", NULL,  8}, /* 577 */
-	{so_s32, "can_status", NULL,  8}, /* 578 */
-	{so_u32, "can_bitmask", NULL,  1}, /* 579 */
-	{so_s32, "can_recv_count", NULL,  1}, /* 580 */
-	{so_u64, "can_pos_sync_time", NULL,  1}, /* 581 */
-	{so_u64, "can_pos_time", NULL,  8}, /* 582 */
-	{so_u64, "can_max_pos_time", NULL,  1}, /* 583 */
-	{so_u64, "can_pos_wait_time", NULL,  8}, /* 584 */
-	{so_s32, "can_setct", NULL,  8}, /* 585 */
-	{so_u32, "naxes", NULL,  1}, /* 586 */
-	{so_s32, "rshm_count", NULL,  1}, /* 587 */
-	{so_s32, "wshm_count", NULL,  1}, /* 588 */
-	{so_u32, "have_pci4e", NULL,  1}, /* 589 */
-	{so_u32, "pci4e_bar", NULL,  1}, /* 590 */
-	{so_u32, "pci4e_remap", NULL,  1}, /* 591 */
-	{so_u32, "pci4e_len", NULL,  1}, /* 592 */
-	{so_u32, "pci4e_dev", NULL,  1}, /* 593 */
-	{so_f64, "pcienc", NULL,  4}, /* 594 */
-	{so_f64, "pcienc_lin", NULL,  4}, /* 595 */
-	{so_s32, "pcienc_raw", NULL,  4}, /* 596 */
-	{so_u32, "pcienc_ret", NULL,  4}, /* 597 */
-	{so_u32, "pcienc_nerrs", NULL,  4}, /* 598 */
-	{so_u32, "pcienc_lastret", NULL,  4}, /* 599 */
-	{so_u32, "pcienc_limit", NULL,  1}, /* 600 */
-	{so_f64, "pcienc_scale", NULL,  1}, /* 601 */
-	{so_u32, "pcienc_zero", NULL,  1}, /* 602 */
-	{so_u32, "pcienc_dosetct", NULL,  1}, /* 603 */
-	{so_u32, "pcienc_setct", NULL,  4}, /* 604 */
-	{so_f64, "stiff", NULL,  1}, /* 605 */
-	{so_f64, "side_stiff", NULL,  1}, /* 606 */
-	{so_u8, "tag", NULL,  8}, /* 607 */
-	{so_u64, "time_after_last_sample", NULL,  1}, /* 608 */
-	{so_u64, "time_after_sample", NULL,  1}, /* 609 */
-	{so_u64, "time_at_start", NULL,  1}, /* 610 */
-	{so_u64, "time_before_last_sample", NULL,  1}, /* 611 */
-	{so_u64, "time_before_sample", NULL,  1}, /* 612 */
-	{so_u64, "time_delta_call", NULL,  1}, /* 613 */
-	{so_u64, "time_delta_sample", NULL,  1}, /* 614 */
-	{so_u64, "time_delta_tick", NULL,  1}, /* 615 */
-	{so_u64, "time_since_start", NULL,  1}, /* 616 */
-	{so_u32, "time_ns_delta_call", NULL,  1}, /* 617 */
-	{so_u32, "time_ns_delta_sample", NULL,  1}, /* 618 */
-	{so_u32, "time_ns_delta_tick", NULL,  1}, /* 619 */
-	{so_u32, "time_ms_since_start", NULL,  1}, /* 620 */
-	{so_u32, "sec", NULL,  1}, /* 621 */
-	{so_u32, "time_ns_delta_sample_thresh", NULL,  1}, /* 622 */
-	{so_u32, "time_ns_delta_tick_thresh", NULL,  1}, /* 623 */
-	{so_u32, "time_ns_max_delta_sample", NULL,  1}, /* 624 */
-	{so_u32, "time_ns_max_delta_tick", NULL,  1}, /* 625 */
-	{so_u32, "total_samples", NULL,  1}, /* 626 */
-	{so_f64, "x", NULL,  1}, /* 627 */
-	{so_f64, "y", NULL,  1}, /* 628 */
-	{so_f64, "ref_pos_x", NULL,  1}, /* 629 */
-	{so_f64, "ref_pos_y", NULL,  1}, /* 630 */
-	{so_f64, "x_force", NULL,  1}, /* 631 */
-	{so_f64, "y_force", NULL,  1}, /* 632 */
-	{so_f64, "soft_xvel", NULL,  1}, /* 633 */
-	{so_f64, "soft_yvel", NULL,  1}, /* 634 */
-	{so_f64, "fsoft_xvel", NULL,  1}, /* 635 */
-	{so_f64, "fsoft_yvel", NULL,  1}, /* 636 */
-	{so_f64, "tach_xvel", NULL,  1}, /* 637 */
-	{so_f64, "tach_yvel", NULL,  1}, /* 638 */
-	{so_f64, "xvel", NULL,  1}, /* 639 */
-	{so_f64, "yvel", NULL,  1}, /* 640 */
-	{so_f64, "velmag", NULL,  1}, /* 641 */
-	{so_f64, "soft_accelx", NULL,  1}, /* 642 */
-	{so_f64, "soft_accely", NULL,  1}, /* 643 */
-	{so_f64, "soft_accelmag", NULL,  1}, /* 644 */
-	{so_f64, "soft_jerkx", NULL,  1}, /* 645 */
-	{so_f64, "soft_jerky", NULL,  1}, /* 646 */
-	{so_f64, "soft_jerkmag", NULL,  1}, /* 647 */
-	{so_f64, "stheta", NULL,  1}, /* 648 */
-	{so_f64, "etheta", NULL,  1}, /* 649 */
-	{so_f64, "sthetadot", NULL,  1}, /* 650 */
-	{so_f64, "ethetadot", NULL,  1}, /* 651 */
-	{so_f64, "spring_ref_s", NULL,  1}, /* 652 */
-	{so_f64, "spring_ref_e", NULL,  1}, /* 653 */
-	{so_f64, "spring_stiff_s", NULL,  1}, /* 654 */
-	{so_f64, "spring_stiff_e", NULL,  1}, /* 655 */
-	{so_f64, "spring_disp_s", NULL,  1}, /* 656 */
-	{so_f64, "spring_disp_e", NULL,  1}, /* 657 */
-	{so_f64, "pl_back_x", NULL,  1}, /* 658 */
-	{so_f64, "pl_back_y", NULL,  1}, /* 659 */
-	{so_f64, "pl_norm_x", NULL,  1}, /* 660 */
-	{so_f64, "pl_norm_y", NULL,  1}, /* 661 */
-	{so_u32, "planar_uei_ao_board_handle", NULL,  1}, /* 662 */
-	{so_u32, "errnum", NULL,  1}, /* 663 */
-	{so_u32, "nerrors", NULL,  1}, /* 664 */
-	{so_u32, "errori", NULL,  128}, /* 665 */
-	{so_u32, "errorcode", NULL,  128}, /* 666 */
-	{so_u32, "errorindex", NULL,  1}, /* 667 */
-	{so_f64, "refarr", NULL,  50000}, /* 668 */
-	{so_u32, "asciilog", NULL,  1}, /* 669 */
-	{so_u32, "targetnumber", NULL,  1}, /* 670 */
-	{so_u32, "last_shm_val", NULL,  1}, /* 671 */
+	{so_u32, "ankle_ueimf", NULL,  1}, /* 142 */
+	{so_f64, "ankle_rl_pfomax", NULL,  1}, /* 143 */
+	{so_f64, "ankle_rl_pfotest", NULL,  1}, /* 144 */
+	{so_u32, "ankle_left_enc_channel", NULL,  1}, /* 145 */
+	{so_f64, "ankle_left_disp", NULL,  1}, /* 146 */
+	{so_f64, "ankle_left_devtrq", NULL,  1}, /* 147 */
+	{so_f64, "ankle_left_xform", NULL,  1}, /* 148 */
+	{so_f64, "ankle_left_volts", NULL,  1}, /* 149 */
+	{so_f64, "ankle_left_force", NULL,  1}, /* 150 */
+	{so_f64, "ankle_left_test_volts", NULL,  1}, /* 151 */
+	{so_u32, "ankle_left_ao_channel", NULL,  1}, /* 152 */
+	{so_u32, "ankle_left_rot_enc_channel", NULL,  1}, /* 153 */
+	{so_f64, "ankle_left_rot_disp", NULL,  1}, /* 154 */
+	{so_f64, "ankle_left_rot_lin_disp", NULL,  1}, /* 155 */
+	{so_f64, "ankle_left_vel", NULL,  1}, /* 156 */
+	{so_f64, "ankle_left_rot_lin_vel", NULL,  1}, /* 157 */
+	{so_u32, "ankle_right_enc_channel", NULL,  1}, /* 158 */
+	{so_f64, "ankle_right_disp", NULL,  1}, /* 159 */
+	{so_f64, "ankle_right_devtrq", NULL,  1}, /* 160 */
+	{so_f64, "ankle_right_xform", NULL,  1}, /* 161 */
+	{so_f64, "ankle_right_volts", NULL,  1}, /* 162 */
+	{so_f64, "ankle_right_force", NULL,  1}, /* 163 */
+	{so_f64, "ankle_right_test_volts", NULL,  1}, /* 164 */
+	{so_u32, "ankle_right_ao_channel", NULL,  1}, /* 165 */
+	{so_u32, "ankle_right_rot_enc_channel", NULL,  1}, /* 166 */
+	{so_f64, "ankle_right_rot_disp", NULL,  1}, /* 167 */
+	{so_f64, "ankle_right_rot_lin_disp", NULL,  1}, /* 168 */
+	{so_f64, "ankle_right_vel", NULL,  1}, /* 169 */
+	{so_f64, "ankle_right_rot_lin_vel", NULL,  1}, /* 170 */
+	{so_u32, "have_ankle", NULL,  1}, /* 171 */
+	{so_f64, "ankle_dp_pos", NULL,  1}, /* 172 */
+	{so_f64, "ankle_dp_vel", NULL,  1}, /* 173 */
+	{so_f64, "ankle_dp_fvel", NULL,  1}, /* 174 */
+	{so_f64, "ankle_dp_faccel", NULL,  1}, /* 175 */
+	{so_f64, "ankle_dp_ref_pos", NULL,  1}, /* 176 */
+	{so_f64, "ankle_dp_stiff_center", NULL,  1}, /* 177 */
+	{so_f64, "ankle_dp_accel", NULL,  1}, /* 178 */
+	{so_f64, "ankle_dp_torque", NULL,  1}, /* 179 */
+	{so_f64, "ankle_dp_moment_cmd", NULL,  1}, /* 180 */
+	{so_f64, "ankle_dp_offset", NULL,  1}, /* 181 */
+	{so_f64, "ankle_dp_norm", NULL,  1}, /* 182 */
+	{so_f64, "ankle_dp_back", NULL,  1}, /* 183 */
+	{so_f64, "ankle_ie_pos", NULL,  1}, /* 184 */
+	{so_f64, "ankle_ie_vel", NULL,  1}, /* 185 */
+	{so_f64, "ankle_ie_fvel", NULL,  1}, /* 186 */
+	{so_f64, "ankle_ie_faccel", NULL,  1}, /* 187 */
+	{so_f64, "ankle_ie_ref_pos", NULL,  1}, /* 188 */
+	{so_f64, "ankle_ie_stiff_center", NULL,  1}, /* 189 */
+	{so_f64, "ankle_ie_accel", NULL,  1}, /* 190 */
+	{so_f64, "ankle_ie_torque", NULL,  1}, /* 191 */
+	{so_f64, "ankle_ie_moment_cmd", NULL,  1}, /* 192 */
+	{so_f64, "ankle_ie_offset", NULL,  1}, /* 193 */
+	{so_f64, "ankle_ie_norm", NULL,  1}, /* 194 */
+	{so_f64, "ankle_ie_back", NULL,  1}, /* 195 */
+	{so_f64, "ankle_accel_mag", NULL,  1}, /* 196 */
+	{so_f64, "ankle_vel_mag", NULL,  1}, /* 197 */
+	{so_f64, "ankle_safety_vel", NULL,  1}, /* 198 */
+	{so_f64, "ankle_safety_accel", NULL,  1}, /* 199 */
+	{so_f64, "ankle_trans_ratio", NULL,  1}, /* 200 */
+	{so_f64, "ankle_trans_lead", NULL,  1}, /* 201 */
+	{so_f64, "ankle_ankle_ball_length", NULL,  1}, /* 202 */
+	{so_f64, "ankle_ball_ball_width", NULL,  1}, /* 203 */
+	{so_f64, "ankle_av_actuator_length", NULL,  1}, /* 204 */
+	{so_f64, "ankle_av_shin_length", NULL,  1}, /* 205 */
+	{so_f64, "ankle_enc_xform", NULL,  1}, /* 206 */
+	{so_f64, "ankle_slip_thresh", NULL,  1}, /* 207 */
+	{so_u32, "ankle_uei_ao_board_handle", NULL,  1}, /* 208 */
+	{so_u32, "ankle_knee_channel", NULL,  1}, /* 209 */
+	{so_f64, "ankle_knee_raw", NULL,  1}, /* 210 */
+	{so_f64, "ankle_knee_xform1", NULL,  1}, /* 211 */
+	{so_f64, "ankle_knee_xform2", NULL,  1}, /* 212 */
+	{so_f64, "ankle_knee_bias", NULL,  1}, /* 213 */
+	{so_f64, "ankle_knee_gain", NULL,  1}, /* 214 */
+	{so_f64, "ankle_knee_angle", NULL,  1}, /* 215 */
+	{so_f64, "linear_stiff", NULL,  1}, /* 216 */
+	{so_f64, "linear_damp", NULL,  1}, /* 217 */
+	{so_f64, "linear_pfomax", NULL,  1}, /* 218 */
+	{so_f64, "linear_pfotest", NULL,  1}, /* 219 */
+	{so_u32, "linear_adap_going_up", NULL,  1}, /* 220 */
+	{so_u32, "linear_enc_channel", NULL,  1}, /* 221 */
+	{so_f64, "linear_disp", NULL,  1}, /* 222 */
+	{so_f64, "linear_devfrc", NULL,  1}, /* 223 */
+	{so_f64, "linear_xform", NULL,  1}, /* 224 */
+	{so_f64, "linear_volts", NULL,  1}, /* 225 */
+	{so_f64, "linear_test_volts", NULL,  1}, /* 226 */
+	{so_u32, "linear_ao_channel", NULL,  1}, /* 227 */
+	{so_f64, "linear_limit_volts", NULL,  1}, /* 228 */
+	{so_u32, "linear_limit_channel", NULL,  1}, /* 229 */
+	{so_u32, "have_linear", NULL,  1}, /* 230 */
+	{so_f64, "linear_pos", NULL,  1}, /* 231 */
+	{so_f64, "linear_vel", NULL,  1}, /* 232 */
+	{so_f64, "linear_fvel", NULL,  1}, /* 233 */
+	{so_f64, "linear_force", NULL,  1}, /* 234 */
+	{so_f64, "linear_force_bias", NULL,  1}, /* 235 */
+	{so_f64, "linear_offset", NULL,  1}, /* 236 */
+	{so_f64, "linear_ref_pos", NULL,  1}, /* 237 */
+	{so_f64, "linear_back", NULL,  1}, /* 238 */
+	{so_f64, "linear_norm", NULL,  1}, /* 239 */
+	{so_f64, "linear_gear_ratio", NULL,  1}, /* 240 */
+	{so_u32, "linear_uei_ao_board_handle", NULL,  1}, /* 241 */
+	{so_f64, "hand_stiff", NULL,  1}, /* 242 */
+	{so_f64, "hand_damp", NULL,  1}, /* 243 */
+	{so_f64, "hand_pfomax", NULL,  1}, /* 244 */
+	{so_f64, "hand_pfotest", NULL,  1}, /* 245 */
+	{so_u32, "hand_adap_going_up", NULL,  1}, /* 246 */
+	{so_u32, "hand_enc_channel", NULL,  1}, /* 247 */
+	{so_f64, "hand_disp", NULL,  1}, /* 248 */
+	{so_f64, "hand_devfrc", NULL,  1}, /* 249 */
+	{so_f64, "hand_xform", NULL,  1}, /* 250 */
+	{so_f64, "hand_bias", NULL,  1}, /* 251 */
+	{so_f64, "hand_volts", NULL,  1}, /* 252 */
+	{so_f64, "hand_test_volts", NULL,  1}, /* 253 */
+	{so_u32, "hand_ao_channel", NULL,  1}, /* 254 */
+	{so_f64, "hand_limit_volts", NULL,  1}, /* 255 */
+	{so_u32, "hand_limit_channel", NULL,  1}, /* 256 */
+	{so_u32, "have_hand", NULL,  1}, /* 257 */
+	{so_f64, "hand_pos", NULL,  1}, /* 258 */
+	{so_f64, "hand_vel", NULL,  1}, /* 259 */
+	{so_f64, "hand_fvel", NULL,  1}, /* 260 */
+	{so_f64, "hand_force", NULL,  1}, /* 261 */
+	{so_f64, "hand_grasp", NULL,  1}, /* 262 */
+	{so_f64, "hand_force_bias", NULL,  1}, /* 263 */
+	{so_f64, "hand_ref_pos", NULL,  1}, /* 264 */
+	{so_f64, "hand_gear_ratio", NULL,  1}, /* 265 */
+	{so_f64, "hand_gear_xform", NULL,  1}, /* 266 */
+	{so_f64, "hand_gear_disp_xform", NULL,  1}, /* 267 */
+	{so_f64, "hand_gear_offset", NULL,  1}, /* 268 */
+	{so_f64, "hand_gear_span", NULL,  1}, /* 269 */
+	{so_f64, "hand_gear_gap", NULL,  1}, /* 270 */
+	{so_u32, "hand_uei_ao_board_handle", NULL,  1}, /* 271 */
+	{so_f64, "hand_active_power", NULL,  1}, /* 272 */
+	{so_u32, "hand_npoints", NULL,  1}, /* 273 */
+	{so_f64, "ain_bias_comp", NULL,  4}, /* 274 */
+	{so_u32, "ain_cfg", NULL,  1}, /* 275 */
+	{so_u32, "ain_slowbit", NULL,  1}, /* 276 */
+	{so_s32, "ain_got_samples", NULL,  1}, /* 277 */
+	{so_s32, "ain_ret", NULL,  1}, /* 278 */
+	{so_s32, "n_ueidaq_boards", NULL,  1}, /* 279 */
+	{so_s32, "uei_board", NULL,  4}, /* 280 */
+	{so_u32, "busy", NULL,  1}, /* 281 */
+	{so_f64, "curl", NULL,  1}, /* 282 */
+	{so_f64, "damp", NULL,  1}, /* 283 */
+	{so_f64, "const_force_x", NULL,  1}, /* 284 */
+	{so_f64, "const_force_y", NULL,  1}, /* 285 */
+	{so_u32, "quit", NULL,  1}, /* 286 */
+	{so_u32, "doinit", NULL,  1}, /* 287 */
+	{so_u32, "didinit", NULL,  1}, /* 288 */
+	{so_u32, "butcutoff", NULL,  1}, /* 289 */
+	{so_s32, "ddfifo", NULL,  1}, /* 290 */
+	{so_s32, "cififo", NULL,  1}, /* 291 */
+	{so_s32, "dififo", NULL,  1}, /* 292 */
+	{so_s32, "dofifo", NULL,  1}, /* 293 */
+	{so_s32, "eofifo", NULL,  1}, /* 294 */
+	{so_u32, "fifolen", NULL,  1}, /* 295 */
+	{so_s32, "tcfifo", NULL,  1}, /* 296 */
+	{so_s32, "ftfifo", NULL,  1}, /* 297 */
+	{so_u32, "ntickfifo", NULL,  1}, /* 298 */
+	{so_u32, "fttickfifo", NULL,  1}, /* 299 */
+	{so_f64, "s_torque", NULL,  1}, /* 300 */
+	{so_f64, "e_torque", NULL,  1}, /* 301 */
+	{so_f64, "s_volts", NULL,  1}, /* 302 */
+	{so_f64, "e_volts", NULL,  1}, /* 303 */
+	{so_f64, "link_s", NULL,  1}, /* 304 */
+	{so_f64, "link_e", NULL,  1}, /* 305 */
+	{so_u32, "have_planar", NULL,  1}, /* 306 */
+	{so_u32, "have_uei", NULL,  1}, /* 307 */
+	{so_u32, "have_tach", NULL,  1}, /* 308 */
+	{so_u32, "have_ft", NULL,  1}, /* 309 */
+	{so_u32, "have_grasp", NULL,  1}, /* 310 */
+	{so_u32, "have_accel", NULL,  1}, /* 311 */
+	{so_u32, "have_planar_incenc", NULL,  1}, /* 312 */
+	{so_u32, "have_planar_ao8", NULL,  1}, /* 313 */
+	{so_u32, "have_mf_aout_for_dout", NULL,  1}, /* 314 */
+	{so_u32, "ankle_debug_position", NULL,  1}, /* 315 */
+	{so_u32, "have_thermal_model", NULL,  1}, /* 316 */
+	{so_u32, "Hz", NULL,  1}, /* 317 */
+	{so_u32, "i", NULL,  1}, /* 318 */
+	{so_u32, "fasti", NULL,  1}, /* 319 */
+	{so_u32, "fastHz", NULL,  1}, /* 320 */
+	{so_u32, "fastirate", NULL,  1}, /* 321 */
+	{so_f64, "fastrate", NULL,  1}, /* 322 */
+	{so_u32, "ovsample", NULL,  1}, /* 323 */
+	{so_u32, "irate", NULL,  1}, /* 324 */
+	{so_f64, "disp", NULL,  32}, /* 325 */
+	{so_u32, "ndisp", NULL,  1}, /* 326 */
+	{so_f64, "log", NULL,  32}, /* 327 */
+	{so_u32, "nlog", NULL,  1}, /* 328 */
+	{so_u32, "logfnid", NULL,  1}, /* 329 */
+	{so_f64, "refin", NULL,  32}, /* 330 */
+	{so_u32, "nwref", NULL,  1}, /* 331 */
+	{so_u32, "nrref", NULL,  1}, /* 332 */
+	{so_u32, "reffnid", NULL,  1}, /* 333 */
+	{so_u32, "refri", NULL,  1}, /* 334 */
+	{so_u32, "refwi", NULL,  1}, /* 335 */
+	{so_u32, "refterm", NULL,  1}, /* 336 */
+	{so_u32, "ref_switchback_go", NULL,  1}, /* 337 */
+	{so_f64, "offset_x", NULL,  1}, /* 338 */
+	{so_f64, "offset_y", NULL,  1}, /* 339 */
+	{so_u32, "paused", NULL,  1}, /* 340 */
+	{so_u32, "fault", NULL,  1}, /* 341 */
+	{so_s32, "stiffener", NULL,  1}, /* 342 */
+	{so_s32, "stiff_delta", NULL,  1}, /* 343 */
+	{so_u32, "no_motors", NULL,  1}, /* 344 */
+	{so_f64, "pi", NULL,  1}, /* 345 */
+	{so_f64, "pfomax", NULL,  1}, /* 346 */
+	{so_f64, "pfotest", NULL,  1}, /* 347 */
+	{so_f64, "impulse_thresh_volts", NULL,  1}, /* 348 */
+	{so_f64, "s_dvolts", NULL,  1}, /* 349 */
+	{so_f64, "e_dvolts", NULL,  1}, /* 350 */
+	{so_f64, "rate", NULL,  1}, /* 351 */
+	{so_f64, "restart_damp", NULL,  1}, /* 352 */
+	{so_u32, "restart_go", NULL,  1}, /* 353 */
+	{so_u32, "restart_Hz", NULL,  1}, /* 354 */
+	{so_u32, "restart_ovsample", NULL,  1}, /* 355 */
+	{so_f64, "restart_stiff", NULL,  1}, /* 356 */
+	{so_u32, "no_safety_check", NULL,  1}, /* 357 */
+	{so_f64, "safety_damping_nms", NULL,  1}, /* 358 */
+	{so_f64, "safety_pos", NULL,  1}, /* 359 */
+	{so_f64, "safety_torque", NULL,  1}, /* 360 */
+	{so_f64, "safety_ramp", NULL,  1}, /* 361 */
+	{so_f64, "safety_vel", NULL,  1}, /* 362 */
+	{so_u32, "safety_planar_just_crossed_back", NULL,  1}, /* 363 */
+	{so_u32, "safety_was_planar_damping", NULL,  1}, /* 364 */
+	{so_u32, "safety_damp_ret_ticks", NULL,  1}, /* 365 */
+	{so_f64, "safety_damp_ret_secs", NULL,  1}, /* 366 */
+	{so_u32, "samplenum", NULL,  1}, /* 367 */
+	{so_u32, "vibrate", NULL,  1}, /* 368 */
+	{so_s32, "xvibe", NULL,  1}, /* 369 */
+	{so_s32, "yvibe", NULL,  1}, /* 370 */
+	{so_f64, "tsvibe", NULL,  1}, /* 371 */
+	{so_f64, "tevibe", NULL,  1}, /* 372 */
+	{so_f64, "tvibamp", NULL,  1}, /* 373 */
+	{so_u32, "test_raw_torque", NULL,  1}, /* 374 */
+	{so_f64, "raw_torque_volts_s", NULL,  1}, /* 375 */
+	{so_f64, "raw_torque_volts_e", NULL,  1}, /* 376 */
+	{so_u32, "test_no_torque", NULL,  1}, /* 377 */
+	{so_f64, "sin_amplitude", NULL,  1}, /* 378 */
+	{so_f64, "sin_period", NULL,  1}, /* 379 */
+	{so_u32, "sin_which_motor", NULL,  1}, /* 380 */
+	{so_u32, "sim_sensors", NULL,  1}, /* 381 */
+	{so_f64, "sim_pos_x", NULL,  1}, /* 382 */
+	{so_f64, "sim_pos_y", NULL,  1}, /* 383 */
+	{so_f64, "sim_wr_pos_fe", NULL,  1}, /* 384 */
+	{so_f64, "sim_wr_pos_ps", NULL,  1}, /* 385 */
+	{so_f64, "sim_wr_pos_aa", NULL,  1}, /* 386 */
+	{so_f64, "sim_vel_x", NULL,  1}, /* 387 */
+	{so_f64, "sim_vel_y", NULL,  1}, /* 388 */
+	{so_f64, "sim_wr_vel_fe", NULL,  1}, /* 389 */
+	{so_f64, "sim_wr_vel_ps", NULL,  1}, /* 390 */
+	{so_f64, "sim_wr_vel_aa", NULL,  1}, /* 391 */
+	{so_f64, "pl_req_pos_x", NULL,  1}, /* 392 */
+	{so_f64, "pl_req_pos_y", NULL,  1}, /* 393 */
+	{so_u32, "pos_error_mod", NULL,  1}, /* 394 */
+	{so_f64, "pos_error_dx", NULL,  1}, /* 395 */
+	{so_f64, "pos_error_dy", NULL,  1}, /* 396 */
+	{so_u32, "slot_id", NULL,  1}, /* 397 */
+	{so_u32, "slot_i", NULL,  1}, /* 398 */
+	{so_u32, "slot_incr", NULL,  1}, /* 399 */
+	{so_u32, "slot_term", NULL,  1}, /* 400 */
+	{so_u32, "slot_termi", NULL,  1}, /* 401 */
+	{so_f64, "slot_b0_x", NULL,  1}, /* 402 */
+	{so_f64, "slot_b0_y", NULL,  1}, /* 403 */
+	{so_f64, "slot_b0_w", NULL,  1}, /* 404 */
+	{so_f64, "slot_b0_h", NULL,  1}, /* 405 */
+	{so_f64, "slot_b1_x", NULL,  1}, /* 406 */
+	{so_f64, "slot_b1_y", NULL,  1}, /* 407 */
+	{so_f64, "slot_b1_w", NULL,  1}, /* 408 */
+	{so_f64, "slot_b1_h", NULL,  1}, /* 409 */
+	{so_u32, "slot_fnid", NULL,  1}, /* 410 */
+	{so_f64, "slot_rot", NULL,  1}, /* 411 */
+	{so_u32, "slot_go", NULL,  1}, /* 412 */
+	{so_u32, "slot_running", NULL,  1}, /* 413 */
+	{so_u32, "slot_max", NULL,  1}, /* 414 */
+	{so_u32, "slot0_id", NULL,  1}, /* 415 */
+	{so_u32, "slot0_i", NULL,  1}, /* 416 */
+	{so_u32, "slot0_incr", NULL,  1}, /* 417 */
+	{so_u32, "slot0_term", NULL,  1}, /* 418 */
+	{so_u32, "slot0_termi", NULL,  1}, /* 419 */
+	{so_f64, "slot0_b0_x", NULL,  1}, /* 420 */
+	{so_f64, "slot0_b0_y", NULL,  1}, /* 421 */
+	{so_f64, "slot0_b0_w", NULL,  1}, /* 422 */
+	{so_f64, "slot0_b0_h", NULL,  1}, /* 423 */
+	{so_f64, "slot0_b1_x", NULL,  1}, /* 424 */
+	{so_f64, "slot0_b1_y", NULL,  1}, /* 425 */
+	{so_f64, "slot0_b1_w", NULL,  1}, /* 426 */
+	{so_f64, "slot0_b1_h", NULL,  1}, /* 427 */
+	{so_f64, "slot0_bcur_x", NULL,  1}, /* 428 */
+	{so_f64, "slot0_bcur_y", NULL,  1}, /* 429 */
+	{so_f64, "slot0_bcur_w", NULL,  1}, /* 430 */
+	{so_f64, "slot0_bcur_h", NULL,  1}, /* 431 */
+	{so_u32, "slot0_fnid", NULL,  1}, /* 432 */
+	{so_f64, "slot0_rot", NULL,  1}, /* 433 */
+	{so_u32, "slot0_running", NULL,  1}, /* 434 */
+	{so_u32, "slot0_go", NULL,  1}, /* 435 */
+	{so_f64, "slot1_b0_x", NULL,  1}, /* 436 */
+	{so_f64, "slot1_b0_y", NULL,  1}, /* 437 */
+	{so_f64, "slot1_b0_w", NULL,  1}, /* 438 */
+	{so_f64, "slot1_b0_h", NULL,  1}, /* 439 */
+	{so_f64, "pm_active_power", NULL,  1}, /* 440 */
+	{so_f64, "pm_robot_power", NULL,  1}, /* 441 */
+	{so_f64, "pm_min_jerk_deviation", NULL,  1}, /* 442 */
+	{so_f64, "pm_min_jerk_dgraph", NULL,  1}, /* 443 */
+	{so_f64, "pm_jerkmag", NULL,  1}, /* 444 */
+	{so_f64, "pm_dist_straight_line", NULL,  1}, /* 445 */
+	{so_f64, "pm_max_dist_along_axis", NULL,  1}, /* 446 */
+	{so_f64, "pm_min_dist_from_target", NULL,  1}, /* 447 */
+	{so_f64, "pm_max_vel", NULL,  1}, /* 448 */
+	{so_u32, "pm_npoints", NULL,  1}, /* 449 */
+	{so_u32, "pm_five_d", NULL,  1}, /* 450 */
+	{so_u32, "done_npoints", NULL,  1}, /* 451 */
+	{so_f64, "done_active_power", NULL,  1}, /* 452 */
+	{so_f64, "done_robot_power", NULL,  1}, /* 453 */
+	{so_f64, "done_min_jerk_deviation", NULL,  1}, /* 454 */
+	{so_f64, "done_min_jerk_dgraph", NULL,  1}, /* 455 */
+	{so_f64, "done_jerkmag", NULL,  1}, /* 456 */
+	{so_f64, "done_max_vel", NULL,  1}, /* 457 */
+	{so_f64, "done_dist_straight_line_sq", NULL,  1}, /* 458 */
+	{so_f64, "done_max_dist_along_axis", NULL,  1}, /* 459 */
+	{so_f64, "done_min_dist_from_target", NULL,  1}, /* 460 */
+	{so_f64, "done_hand_pct_in", NULL,  1}, /* 461 */
+	{so_f64, "done_hand_pct_out", NULL,  1}, /* 462 */
+	{so_f64, "scr", NULL,  64}, /* 463 */
+	{so_f64, "scr0", NULL,  1}, /* 464 */
+	{so_f64, "scr1", NULL,  1}, /* 465 */
+	{so_f64, "scr2", NULL,  1}, /* 466 */
+	{so_f64, "scr3", NULL,  1}, /* 467 */
+	{so_f64, "scr4", NULL,  1}, /* 468 */
+	{so_f64, "scr5", NULL,  1}, /* 469 */
+	{so_f64, "scr6", NULL,  1}, /* 470 */
+	{so_f64, "scr7", NULL,  1}, /* 471 */
+	{so_f64, "aodiff", NULL,  16}, /* 472 */
+	{so_f64, "aocum", NULL,  16}, /* 473 */
+	{so_f64, "aorms", NULL,  16}, /* 474 */
+	{so_f64, "aocum1", NULL,  16}, /* 475 */
+	{so_f64, "aoavg", NULL,  16}, /* 476 */
+	{so_s32, "aocount", NULL,  1}, /* 477 */
+	{so_f64, "pl_stopspan", NULL,  1}, /* 478 */
+	{so_f64, "pl_linkspan", NULL,  1}, /* 479 */
+	{so_f64, "pl_vbig", NULL,  1}, /* 480 */
+	{so_f64, "pl_vsmall", NULL,  1}, /* 481 */
+	{so_f64, "pl_vtiny", NULL,  1}, /* 482 */
+	{so_f64, "pl_slop", NULL,  1}, /* 483 */
+	{so_f64, "ha_vbig", NULL,  1}, /* 484 */
+	{so_f64, "ha_vsmall", NULL,  1}, /* 485 */
+	{so_f64, "ha_slop", NULL,  1}, /* 486 */
+	{so_f64, "wr_diffslop", NULL,  1}, /* 487 */
+	{so_f64, "wr_psslop", NULL,  1}, /* 488 */
+	{so_f64, "wr_rspan", NULL,  1}, /* 489 */
+	{so_f64, "wr_lspan", NULL,  1}, /* 490 */
+	{so_f64, "wr_psspan", NULL,  1}, /* 491 */
+	{so_f64, "wr_vbig", NULL,  1}, /* 492 */
+	{so_f64, "wr_vsmall", NULL,  1}, /* 493 */
+	{so_u16, "dienc", NULL,  4}, /* 494 */
+	{so_s32, "dienc_vel", NULL,  2}, /* 495 */
+	{so_s32, "dienc_accel", NULL,  2}, /* 496 */
+	{so_u32, "diovs", NULL,  1}, /* 497 */
+	{so_u16, "dout_buf", NULL,  4}, /* 498 */
+	{so_u16, "dout0", NULL,  1}, /* 499 */
+	{so_u16, "dout1", NULL,  1}, /* 500 */
+	{so_u16, "adc", NULL,  64}, /* 501 */
+	{so_u16, "dac", NULL,  32}, /* 502 */
+	{so_f64, "adcvolts", NULL,  64}, /* 503 */
+	{so_f64, "emg1", NULL,  64}, /* 504 */
+	{so_f64, "emg2", NULL,  64}, /* 505 */
+	{so_f64, "emg3", NULL,  64}, /* 506 */
+	{so_f64, "emg4", NULL,  64}, /* 507 */
+	{so_f64, "adcmean", NULL,  64}, /* 508 */
+	{so_f64, "adcmed", NULL,  64}, /* 509 */
+	{so_f64, "dacvolts", NULL,  32}, /* 510 */
+	{so_u16, "distat", NULL,  2}, /* 511 */
+	{so_u32, "ft_flip", NULL,  1}, /* 512 */
+	{so_u32, "ft_vert", NULL,  1}, /* 513 */
+	{so_u32, "ft_have_rotmat", NULL,  1}, /* 514 */
+	{so_u32, "ft_rotmat_setup_done", NULL,  1}, /* 515 */
+	{so_f64, "ft_rotx", NULL,  1}, /* 516 */
+	{so_f64, "ft_roty", NULL,  1}, /* 517 */
+	{so_f64, "ft_rotz", NULL,  1}, /* 518 */
+	{so_u32, "ft_righthand", NULL,  1}, /* 519 */
+	{so_f64, "ft_pre_jacx", NULL,  1}, /* 520 */
+	{so_f64, "ft_pre_jacy", NULL,  1}, /* 521 */
+	{so_f64, "ft_pre_jacz", NULL,  1}, /* 522 */
+	{so_f64, "ft_rotmat", NULL,  9}, /* 523 */
+	{so_u32, "ft_dobias", NULL,  1}, /* 524 */
+	{so_f64, "ft_offset", NULL,  1}, /* 525 */
+	{so_u32, "ft_channel", NULL,  6}, /* 526 */
+	{so_f64, "ft_raw", NULL,  6}, /* 527 */
+	{so_f64, "ft_curr", NULL,  6}, /* 528 */
+	{so_f64, "ft_prev", NULL,  6}, /* 529 */
+	{so_f64, "ft_filt", NULL,  6}, /* 530 */
+	{so_f64, "ft_sg", NULL,  6}, /* 531 */
+	{so_f64, "ft_prevf", NULL,  6}, /* 532 */
+	{so_f64, "ft_xworld", NULL,  1}, /* 533 */
+	{so_f64, "ft_yworld", NULL,  1}, /* 534 */
+	{so_f64, "ft_zworld", NULL,  1}, /* 535 */
+	{so_f64, "ft_xdev", NULL,  1}, /* 536 */
+	{so_f64, "ft_ydev", NULL,  1}, /* 537 */
+	{so_f64, "ft_zdev", NULL,  1}, /* 538 */
+	{so_f64, "ft_xmoment", NULL,  1}, /* 539 */
+	{so_f64, "ft_ymoment", NULL,  1}, /* 540 */
+	{so_f64, "ft_zmoment", NULL,  1}, /* 541 */
+	{so_f64, "ft_xymag", NULL,  1}, /* 542 */
+	{so_f64, "ft_cal", NULL,  36}, /* 543 */
+	{so_f64, "ft_scale", NULL,  6}, /* 544 */
+	{so_f64, "ft_bias", NULL,  6}, /* 545 */
+	{so_f64, "ft_cooked", NULL,  6}, /* 546 */
+	{so_f64, "ft_avg", NULL,  6}, /* 547 */
+	{so_f64, "ft_sghist0", NULL,  16}, /* 548 */
+	{so_u32, "ft_status", NULL,  1}, /* 549 */
+	{so_f64, "ft_cal01", NULL,  1}, /* 550 */
+	{so_f64, "ft_cal10", NULL,  1}, /* 551 */
+	{so_f64, "ft_cal11", NULL,  1}, /* 552 */
+	{so_u32, "accel_channel", NULL,  3}, /* 553 */
+	{so_f64, "accel_raw", NULL,  3}, /* 554 */
+	{so_f64, "accel_curr", NULL,  3}, /* 555 */
+	{so_f64, "accel_bias", NULL,  3}, /* 556 */
+	{so_f64, "accel_xform", NULL,  1}, /* 557 */
+	{so_f64, "accelx", NULL,  1}, /* 558 */
+	{so_f64, "accely", NULL,  1}, /* 559 */
+	{so_f64, "accelz", NULL,  1}, /* 560 */
+	{so_u32, "grasp_channel", NULL,  1}, /* 561 */
+	{so_f64, "grasp_raw", NULL,  1}, /* 562 */
+	{so_f64, "grasp_bias", NULL,  1}, /* 563 */
+	{so_f64, "grasp_cal", NULL,  1}, /* 564 */
+	{so_f64, "grasp_gain", NULL,  1}, /* 565 */
+	{so_f64, "grasp_force", NULL,  1}, /* 566 */
+	{so_u32, "have_can", NULL,  1}, /* 567 */
+	{so_s32, "can_fd", NULL,  1}, /* 568 */
+	{so_s32, "can_axis", NULL,  1}, /* 569 */
+	{so_s32, "can_value", NULL,  1}, /* 570 */
+	{so_s16, "can_analog1", NULL,  8}, /* 571 */
+	{so_s16, "can_analog2", NULL,  8}, /* 572 */
+	{so_s32, "can_pos_raw", NULL,  8}, /* 573 */
+	{so_s32, "can_pos2_raw", NULL,  8}, /* 574 */
+	{so_s32, "can_vel_raw", NULL,  8}, /* 575 */
+	{so_s32, "can_read_error", NULL,  8}, /* 576 */
+	{so_s32, "can_status", NULL,  8}, /* 577 */
+	{so_u32, "can_bitmask", NULL,  1}, /* 578 */
+	{so_s32, "can_recv_count", NULL,  1}, /* 579 */
+	{so_u64, "can_pos_sync_time", NULL,  1}, /* 580 */
+	{so_u64, "can_pos_time", NULL,  8}, /* 581 */
+	{so_u64, "can_max_pos_time", NULL,  1}, /* 582 */
+	{so_u64, "can_pos_wait_time", NULL,  8}, /* 583 */
+	{so_s32, "can_setct", NULL,  8}, /* 584 */
+	{so_u32, "naxes", NULL,  1}, /* 585 */
+	{so_s32, "rshm_count", NULL,  1}, /* 586 */
+	{so_s32, "wshm_count", NULL,  1}, /* 587 */
+	{so_u32, "have_pci4e", NULL,  1}, /* 588 */
+	{so_u32, "pci4e_bar", NULL,  1}, /* 589 */
+	{so_u32, "pci4e_remap", NULL,  1}, /* 590 */
+	{so_u32, "pci4e_len", NULL,  1}, /* 591 */
+	{so_u32, "pci4e_dev", NULL,  1}, /* 592 */
+	{so_f64, "pcienc", NULL,  4}, /* 593 */
+	{so_f64, "pcienc_lin", NULL,  4}, /* 594 */
+	{so_s32, "pcienc_raw", NULL,  4}, /* 595 */
+	{so_u32, "pcienc_ret", NULL,  4}, /* 596 */
+	{so_u32, "pcienc_nerrs", NULL,  4}, /* 597 */
+	{so_u32, "pcienc_lastret", NULL,  4}, /* 598 */
+	{so_u32, "pcienc_limit", NULL,  1}, /* 599 */
+	{so_f64, "pcienc_scale", NULL,  1}, /* 600 */
+	{so_u32, "pcienc_zero", NULL,  1}, /* 601 */
+	{so_u32, "pcienc_dosetct", NULL,  1}, /* 602 */
+	{so_u32, "pcienc_setct", NULL,  4}, /* 603 */
+	{so_f64, "stiff", NULL,  1}, /* 604 */
+	{so_f64, "side_stiff", NULL,  1}, /* 605 */
+	{so_u8, "tag", NULL,  8}, /* 606 */
+	{so_u64, "time_after_last_sample", NULL,  1}, /* 607 */
+	{so_u64, "time_after_sample", NULL,  1}, /* 608 */
+	{so_u64, "time_at_start", NULL,  1}, /* 609 */
+	{so_u64, "time_before_last_sample", NULL,  1}, /* 610 */
+	{so_u64, "time_before_sample", NULL,  1}, /* 611 */
+	{so_u64, "time_delta_call", NULL,  1}, /* 612 */
+	{so_u64, "time_delta_sample", NULL,  1}, /* 613 */
+	{so_u64, "time_delta_tick", NULL,  1}, /* 614 */
+	{so_u64, "time_since_start", NULL,  1}, /* 615 */
+	{so_u32, "time_ns_delta_call", NULL,  1}, /* 616 */
+	{so_u32, "time_ns_delta_sample", NULL,  1}, /* 617 */
+	{so_u32, "time_ns_delta_tick", NULL,  1}, /* 618 */
+	{so_u32, "time_ms_since_start", NULL,  1}, /* 619 */
+	{so_u32, "sec", NULL,  1}, /* 620 */
+	{so_u32, "time_ns_delta_sample_thresh", NULL,  1}, /* 621 */
+	{so_u32, "time_ns_delta_tick_thresh", NULL,  1}, /* 622 */
+	{so_u32, "time_ns_max_delta_sample", NULL,  1}, /* 623 */
+	{so_u32, "time_ns_max_delta_tick", NULL,  1}, /* 624 */
+	{so_u32, "total_samples", NULL,  1}, /* 625 */
+	{so_f64, "x", NULL,  1}, /* 626 */
+	{so_f64, "y", NULL,  1}, /* 627 */
+	{so_f64, "ref_pos_x", NULL,  1}, /* 628 */
+	{so_f64, "ref_pos_y", NULL,  1}, /* 629 */
+	{so_f64, "x_force", NULL,  1}, /* 630 */
+	{so_f64, "y_force", NULL,  1}, /* 631 */
+	{so_f64, "soft_xvel", NULL,  1}, /* 632 */
+	{so_f64, "soft_yvel", NULL,  1}, /* 633 */
+	{so_f64, "fsoft_xvel", NULL,  1}, /* 634 */
+	{so_f64, "fsoft_yvel", NULL,  1}, /* 635 */
+	{so_f64, "tach_xvel", NULL,  1}, /* 636 */
+	{so_f64, "tach_yvel", NULL,  1}, /* 637 */
+	{so_f64, "xvel", NULL,  1}, /* 638 */
+	{so_f64, "yvel", NULL,  1}, /* 639 */
+	{so_f64, "velmag", NULL,  1}, /* 640 */
+	{so_f64, "soft_accelx", NULL,  1}, /* 641 */
+	{so_f64, "soft_accely", NULL,  1}, /* 642 */
+	{so_f64, "soft_accelmag", NULL,  1}, /* 643 */
+	{so_f64, "soft_jerkx", NULL,  1}, /* 644 */
+	{so_f64, "soft_jerky", NULL,  1}, /* 645 */
+	{so_f64, "soft_jerkmag", NULL,  1}, /* 646 */
+	{so_f64, "stheta", NULL,  1}, /* 647 */
+	{so_f64, "etheta", NULL,  1}, /* 648 */
+	{so_f64, "sthetadot", NULL,  1}, /* 649 */
+	{so_f64, "ethetadot", NULL,  1}, /* 650 */
+	{so_f64, "spring_ref_s", NULL,  1}, /* 651 */
+	{so_f64, "spring_ref_e", NULL,  1}, /* 652 */
+	{so_f64, "spring_stiff_s", NULL,  1}, /* 653 */
+	{so_f64, "spring_stiff_e", NULL,  1}, /* 654 */
+	{so_f64, "spring_disp_s", NULL,  1}, /* 655 */
+	{so_f64, "spring_disp_e", NULL,  1}, /* 656 */
+	{so_f64, "pl_back_x", NULL,  1}, /* 657 */
+	{so_f64, "pl_back_y", NULL,  1}, /* 658 */
+	{so_f64, "pl_norm_x", NULL,  1}, /* 659 */
+	{so_f64, "pl_norm_y", NULL,  1}, /* 660 */
+	{so_u32, "planar_uei_ao_board_handle", NULL,  1}, /* 661 */
+	{so_u32, "errnum", NULL,  1}, /* 662 */
+	{so_u32, "nerrors", NULL,  1}, /* 663 */
+	{so_u32, "errori", NULL,  128}, /* 664 */
+	{so_u32, "errorcode", NULL,  128}, /* 665 */
+	{so_u32, "errorindex", NULL,  1}, /* 666 */
+	{so_f64, "refarr", NULL,  50000}, /* 667 */
+	{so_u32, "asciilog", NULL,  1}, /* 668 */
+	{so_u32, "targetnumber", NULL,  1}, /* 669 */
+	{so_u32, "last_shm_val", NULL,  1}, /* 670 */
 };
 
 
@@ -848,534 +847,533 @@ void setcmdlocs(void) {
 	cmds[139].loc = &ob->ankle.target_Distance_DP;
 	cmds[140].loc = &ob->ankle.gravityCompMode;
 	cmds[141].loc = &ob->ankle.gravityTorque;
-	cmds[142].loc = &ob->ankle.torque_IE;
-	cmds[143].loc = &ob->ankle.ueimf;
-	cmds[144].loc = &ob->ankle.rl_pfomax;
-	cmds[145].loc = &ob->ankle.rl_pfotest;
-	cmds[146].loc = &rob->ankle.left.enc_channel;
-	cmds[147].loc = &rob->ankle.left.disp;
-	cmds[148].loc = &rob->ankle.left.devtrq;
-	cmds[149].loc = &rob->ankle.left.xform;
-	cmds[150].loc = &rob->ankle.left.volts;
-	cmds[151].loc = &rob->ankle.left.force;
-	cmds[152].loc = &rob->ankle.left.test_volts;
-	cmds[153].loc = &rob->ankle.left.ao_channel;
-	cmds[154].loc = &rob->ankle.left.rot_enc_channel;
-	cmds[155].loc = &rob->ankle.left.rot_disp;
-	cmds[156].loc = &rob->ankle.left.rot_lin_disp;
-	cmds[157].loc = &rob->ankle.left.vel;
-	cmds[158].loc = &rob->ankle.left.rot_lin_vel;
-	cmds[159].loc = &rob->ankle.right.enc_channel;
-	cmds[160].loc = &rob->ankle.right.disp;
-	cmds[161].loc = &rob->ankle.right.devtrq;
-	cmds[162].loc = &rob->ankle.right.xform;
-	cmds[163].loc = &rob->ankle.right.volts;
-	cmds[164].loc = &rob->ankle.right.force;
-	cmds[165].loc = &rob->ankle.right.test_volts;
-	cmds[166].loc = &rob->ankle.right.ao_channel;
-	cmds[167].loc = &rob->ankle.right.rot_enc_channel;
-	cmds[168].loc = &rob->ankle.right.rot_disp;
-	cmds[169].loc = &rob->ankle.right.rot_lin_disp;
-	cmds[170].loc = &rob->ankle.right.vel;
-	cmds[171].loc = &rob->ankle.right.rot_lin_vel;
-	cmds[172].loc = &ob->have_ankle;
-	cmds[173].loc = &ob->ankle.pos.dp;
-	cmds[174].loc = &ob->ankle.vel.dp;
-	cmds[175].loc = &ob->ankle.fvel.dp;
-	cmds[176].loc = &ob->ankle.faccel.dp;
-	cmds[177].loc = &ob->ankle.ref_pos.dp;
-	cmds[178].loc = &ob->ankle.stiff_center.dp;
-	cmds[179].loc = &ob->ankle.accel.dp;
-	cmds[180].loc = &ob->ankle.torque.dp;
-	cmds[181].loc = &ob->ankle.moment_cmd.dp;
-	cmds[182].loc = &ob->ankle.offset.dp;
-	cmds[183].loc = &ob->ankle.norm.dp;
-	cmds[184].loc = &ob->ankle.back.dp;
-	cmds[185].loc = &ob->ankle.pos.ie;
-	cmds[186].loc = &ob->ankle.vel.ie;
-	cmds[187].loc = &ob->ankle.fvel.ie;
-	cmds[188].loc = &ob->ankle.faccel.ie;
-	cmds[189].loc = &ob->ankle.ref_pos.ie;
-	cmds[190].loc = &ob->ankle.stiff_center.ie;
-	cmds[191].loc = &ob->ankle.accel.ie;
-	cmds[192].loc = &ob->ankle.torque.ie;
-	cmds[193].loc = &ob->ankle.moment_cmd.ie;
-	cmds[194].loc = &ob->ankle.offset.ie;
-	cmds[195].loc = &ob->ankle.norm.ie;
-	cmds[196].loc = &ob->ankle.back.ie;
-	cmds[197].loc = &ob->ankle.accel_mag;
-	cmds[198].loc = &ob->ankle.vel_mag;
-	cmds[199].loc = &ob->ankle.safety_vel;
-	cmds[200].loc = &ob->ankle.safety_accel;
-	cmds[201].loc = &rob->ankle.trans.ratio;
-	cmds[202].loc = &rob->ankle.trans.lead;
-	cmds[203].loc = &rob->ankle.trans.ankle_ball_length;
-	cmds[204].loc = &rob->ankle.trans.ball_ball_width;
-	cmds[205].loc = &rob->ankle.trans.av_actuator_length;
-	cmds[206].loc = &rob->ankle.trans.av_shin_length;
-	cmds[207].loc = &rob->ankle.trans.enc_xform;
-	cmds[208].loc = &rob->ankle.trans.slip_thresh;
-	cmds[209].loc = &rob->ankle.uei_ao_board_handle;
-	cmds[210].loc = &rob->ankle.knee.channel;
-	cmds[211].loc = &rob->ankle.knee.raw;
-	cmds[212].loc = &rob->ankle.knee.xform1;
-	cmds[213].loc = &rob->ankle.knee.xform2;
-	cmds[214].loc = &rob->ankle.knee.bias;
-	cmds[215].loc = &rob->ankle.knee.gain;
-	cmds[216].loc = &rob->ankle.knee.angle;
-	cmds[217].loc = &ob->linear.stiff;
-	cmds[218].loc = &ob->linear.damp;
-	cmds[219].loc = &ob->linear.pfomax;
-	cmds[220].loc = &ob->linear.pfotest;
-	cmds[221].loc = &ob->linear.adap_going_up;
-	cmds[222].loc = &rob->linear.motor.enc_channel;
-	cmds[223].loc = &rob->linear.motor.disp;
-	cmds[224].loc = &rob->linear.motor.devfrc;
-	cmds[225].loc = &rob->linear.motor.xform;
-	cmds[226].loc = &rob->linear.motor.volts;
-	cmds[227].loc = &rob->linear.motor.test_volts;
-	cmds[228].loc = &rob->linear.motor.ao_channel;
-	cmds[229].loc = &rob->linear.motor.limit_volts;
-	cmds[230].loc = &rob->linear.motor.limit_channel;
-	cmds[231].loc = &ob->have_linear;
-	cmds[232].loc = &ob->linear.pos;
-	cmds[233].loc = &ob->linear.vel;
-	cmds[234].loc = &ob->linear.fvel;
-	cmds[235].loc = &ob->linear.force;
-	cmds[236].loc = &ob->linear.force_bias;
-	cmds[237].loc = &ob->linear.offset;
-	cmds[238].loc = &ob->linear.ref_pos;
-	cmds[239].loc = &ob->linear.back;
-	cmds[240].loc = &ob->linear.norm;
-	cmds[241].loc = &rob->linear.gears.ratio;
-	cmds[242].loc = &rob->linear.uei_ao_board_handle;
-	cmds[243].loc = &ob->hand.stiff;
-	cmds[244].loc = &ob->hand.damp;
-	cmds[245].loc = &ob->hand.pfomax;
-	cmds[246].loc = &ob->hand.pfotest;
-	cmds[247].loc = &ob->hand.adap_going_up;
-	cmds[248].loc = &rob->hand.motor.enc_channel;
-	cmds[249].loc = &rob->hand.motor.disp;
-	cmds[250].loc = &rob->hand.motor.devfrc;
-	cmds[251].loc = &rob->hand.motor.xform;
-	cmds[252].loc = &rob->hand.motor.bias;
-	cmds[253].loc = &rob->hand.motor.volts;
-	cmds[254].loc = &rob->hand.motor.test_volts;
-	cmds[255].loc = &rob->hand.motor.ao_channel;
-	cmds[256].loc = &rob->hand.motor.limit_volts;
-	cmds[257].loc = &rob->hand.motor.limit_channel;
-	cmds[258].loc = &ob->have_hand;
-	cmds[259].loc = &ob->hand.pos;
-	cmds[260].loc = &ob->hand.vel;
-	cmds[261].loc = &ob->hand.fvel;
-	cmds[262].loc = &ob->hand.force;
-	cmds[263].loc = &ob->hand.grasp;
-	cmds[264].loc = &ob->hand.force_bias;
-	cmds[265].loc = &ob->hand.ref_pos;
-	cmds[266].loc = &rob->hand.gears.ratio;
-	cmds[267].loc = &rob->hand.gears.xform;
-	cmds[268].loc = &rob->hand.gears.disp_xform;
-	cmds[269].loc = &rob->hand.gears.offset;
-	cmds[270].loc = &rob->hand.gears.span;
-	cmds[271].loc = &rob->hand.gears.gap;
-	cmds[272].loc = &rob->hand.uei_ao_board_handle;
-	cmds[273].loc = &ob->hand.active_power;
-	cmds[274].loc = &ob->hand.npoints;
-	cmds[275].loc = &daq->ain_bias_comp;
-	cmds[276].loc = &daq->ain_cfg;
-	cmds[277].loc = &daq->ain_slowbit;
-	cmds[278].loc = &daq->ain_got_samples;
-	cmds[279].loc = &daq->ain_ret;
-	cmds[280].loc = &daq->n_ueidaq_boards;
-	cmds[281].loc = &daq->uei_board[0];
-	cmds[282].loc = &ob->busy;
-	cmds[283].loc = &ob->curl;
-	cmds[284].loc = &ob->damp;
-	cmds[285].loc = &ob->const_force.x;
-	cmds[286].loc = &ob->const_force.y;
-	cmds[287].loc = &ob->quit;
-	cmds[288].loc = &ob->doinit;
-	cmds[289].loc = &ob->didinit;
-	cmds[290].loc = &ob->butcutoff;
-	cmds[291].loc = &ob->ddfifo;
-	cmds[292].loc = &ob->cififo;
-	cmds[293].loc = &ob->dififo;
-	cmds[294].loc = &ob->dofifo;
-	cmds[295].loc = &ob->eofifo;
-	cmds[296].loc = &ob->fifolen;
-	cmds[297].loc = &ob->tcfifo;
-	cmds[298].loc = &ob->ftfifo;
-	cmds[299].loc = &ob->ntickfifo;
-	cmds[300].loc = &ob->fttickfifo;
-	cmds[301].loc = &ob->motor_torque.s;
-	cmds[302].loc = &ob->motor_torque.e;
-	cmds[303].loc = &ob->motor_volts.s;
-	cmds[304].loc = &ob->motor_volts.e;
-	cmds[305].loc = &rob->link.s;
-	cmds[306].loc = &rob->link.e;
-	cmds[307].loc = &ob->have_planar;
-	cmds[308].loc = &ob->have_uei;
-	cmds[309].loc = &ob->have_tach;
-	cmds[310].loc = &ob->have_ft;
-	cmds[311].loc = &ob->have_grasp;
-	cmds[312].loc = &ob->have_accel;
-	cmds[313].loc = &ob->have_planar_incenc;
-	cmds[314].loc = &ob->have_planar_ao8;
-	cmds[315].loc = &ob->have_mf_aout_for_dout;
-	cmds[316].loc = &ob->ankle_debug_position;
-	cmds[317].loc = &ob->have_thermal_model;
-	cmds[318].loc = &ob->Hz;
-	cmds[319].loc = &ob->i;
-	cmds[320].loc = &ob->fasti;
-	cmds[321].loc = &ob->fastHz;
-	cmds[322].loc = &ob->fastirate;
-	cmds[323].loc = &ob->fastrate;
-	cmds[324].loc = &ob->ovsample;
-	cmds[325].loc = &ob->irate;
-	cmds[326].loc = &ob->disp[0];
-	cmds[327].loc = &ob->ndisp;
-	cmds[328].loc = &ob->log;
-	cmds[329].loc = &ob->nlog;
-	cmds[330].loc = &ob->logfnid;
-	cmds[331].loc = &ob->refin;
-	cmds[332].loc = &ob->nwref;
-	cmds[333].loc = &ob->nrref;
-	cmds[334].loc = &ob->reffnid;
-	cmds[335].loc = &ob->refri;
-	cmds[336].loc = &ob->refwi;
-	cmds[337].loc = &ob->refterm;
-	cmds[338].loc = &ob->ref_switchback_go;
-	cmds[339].loc = &rob->offset.x;
-	cmds[340].loc = &rob->offset.y;
-	cmds[341].loc = &ob->paused;
-	cmds[342].loc = &ob->fault;
-	cmds[343].loc = &ob->stiffener;
-	cmds[344].loc = &ob->stiff_delta;
-	cmds[345].loc = &ob->no_motors;
-	cmds[346].loc = &ob->pi;
-	cmds[347].loc = &ob->pfomax;
-	cmds[348].loc = &ob->pfotest;
-	cmds[349].loc = &ob->impulse_thresh_volts;
-	cmds[350].loc = &ob->dvolts.s;
-	cmds[351].loc = &ob->dvolts.e;
-	cmds[352].loc = &ob->rate;
-	cmds[353].loc = &ob->restart.damp;
-	cmds[354].loc = &ob->restart.go;
-	cmds[355].loc = &ob->restart.Hz;
-	cmds[356].loc = &ob->restart.ovsample;
-	cmds[357].loc = &ob->restart.stiff;
-	cmds[358].loc = &ob->safety.override;
-	cmds[359].loc = &ob->safety.damping_nms;
-	cmds[360].loc = &ob->safety.pos;
-	cmds[361].loc = &ob->safety.torque;
-	cmds[362].loc = &ob->safety.ramp;
-	cmds[363].loc = &ob->safety.vel;
-	cmds[364].loc = &ob->safety.planar_just_crossed_back;
-	cmds[365].loc = &ob->safety.was_planar_damping;
-	cmds[366].loc = &ob->safety.damp_ret_ticks;
-	cmds[367].loc = &ob->safety.damp_ret_secs;
-	cmds[368].loc = &ob->samplenum;
-	cmds[369].loc = &ob->vibrate;
-	cmds[370].loc = &ob->xvibe;
-	cmds[371].loc = &ob->yvibe;
-	cmds[372].loc = &ob->tsvibe;
-	cmds[373].loc = &ob->tevibe;
-	cmds[374].loc = &ob->tvibamp;
-	cmds[375].loc = &ob->test_raw_torque;
-	cmds[376].loc = &ob->raw_torque_volts.s;
-	cmds[377].loc = &ob->raw_torque_volts.e;
-	cmds[378].loc = &ob->test_no_torque;
-	cmds[379].loc = &ob->sin_amplitude;
-	cmds[380].loc = &ob->sin_period;
-	cmds[381].loc = &ob->sin_which_motor;
-	cmds[382].loc = &ob->sim.sensors;
-	cmds[383].loc = &ob->sim.pos.x;
-	cmds[384].loc = &ob->sim.pos.y;
-	cmds[385].loc = &ob->sim.wr_pos.fe;
-	cmds[386].loc = &ob->sim.wr_pos.ps;
-	cmds[387].loc = &ob->sim.wr_pos.aa;
-	cmds[388].loc = &ob->sim.vel.x;
-	cmds[389].loc = &ob->sim.vel.y;
-	cmds[390].loc = &ob->sim.wr_vel.fe;
-	cmds[391].loc = &ob->sim.wr_vel.ps;
-	cmds[392].loc = &ob->sim.wr_vel.aa;
-	cmds[393].loc = &ob->req_pos.x;
-	cmds[394].loc = &ob->req_pos.y;
-	cmds[395].loc = &ob->pos_error.mod;
-	cmds[396].loc = &ob->pos_error.dx;
-	cmds[397].loc = &ob->pos_error.dy;
-	cmds[398].loc = &ob->copy_slot.id;
-	cmds[399].loc = &ob->copy_slot.i;
-	cmds[400].loc = &ob->copy_slot.incr;
-	cmds[401].loc = &ob->copy_slot.term;
-	cmds[402].loc = &ob->copy_slot.termi;
-	cmds[403].loc = &ob->copy_slot.b0.point.x;
-	cmds[404].loc = &ob->copy_slot.b0.point.y;
-	cmds[405].loc = &ob->copy_slot.b0.w;
-	cmds[406].loc = &ob->copy_slot.b0.h;
-	cmds[407].loc = &ob->copy_slot.b1.point.x;
-	cmds[408].loc = &ob->copy_slot.b1.point.y;
-	cmds[409].loc = &ob->copy_slot.b1.w;
-	cmds[410].loc = &ob->copy_slot.b1.h;
-	cmds[411].loc = &ob->copy_slot.fnid;
-	cmds[412].loc = &ob->copy_slot.rot;
-	cmds[413].loc = &ob->copy_slot.go;
-	cmds[414].loc = &ob->copy_slot.running;
-	cmds[415].loc = &ob->slot_max;
-	cmds[416].loc = &ob->slot[0].id;
-	cmds[417].loc = &ob->slot[0].i;
-	cmds[418].loc = &ob->slot[0].incr;
-	cmds[419].loc = &ob->slot[0].term;
-	cmds[420].loc = &ob->slot[0].termi;
-	cmds[421].loc = &ob->slot[0].b0.point.x;
-	cmds[422].loc = &ob->slot[0].b0.point.y;
-	cmds[423].loc = &ob->slot[0].b0.w;
-	cmds[424].loc = &ob->slot[0].b0.h;
-	cmds[425].loc = &ob->slot[0].b1.point.x;
-	cmds[426].loc = &ob->slot[0].b1.point.y;
-	cmds[427].loc = &ob->slot[0].b1.w;
-	cmds[428].loc = &ob->slot[0].b1.h;
-	cmds[429].loc = &ob->slot[0].bcur.point.x;
-	cmds[430].loc = &ob->slot[0].bcur.point.y;
-	cmds[431].loc = &ob->slot[0].bcur.w;
-	cmds[432].loc = &ob->slot[0].bcur.h;
-	cmds[433].loc = &ob->slot[0].fnid;
-	cmds[434].loc = &ob->slot[0].rot;
-	cmds[435].loc = &ob->slot[0].running;
-	cmds[436].loc = &ob->slot[0].go;
-	cmds[437].loc = &ob->slot[1].b0.point.x;
-	cmds[438].loc = &ob->slot[1].b0.point.y;
-	cmds[439].loc = &ob->slot[1].b0.w;
-	cmds[440].loc = &ob->slot[1].b0.h;
-	cmds[441].loc = &ob->pm.active_power;
-	cmds[442].loc = &ob->pm.robot_power;
-	cmds[443].loc = &ob->pm.min_jerk_deviation;
-	cmds[444].loc = &ob->pm.min_jerk_dgraph;
-	cmds[445].loc = &ob->pm.jerkmag;
-	cmds[446].loc = &ob->pm.dist_straight_line;
-	cmds[447].loc = &ob->pm.max_dist_along_axis;
-	cmds[448].loc = &ob->pm.min_dist_from_target;
-	cmds[449].loc = &ob->pm.max_vel;
-	cmds[450].loc = &ob->pm.npoints;
-	cmds[451].loc = &ob->pm.five_d;
-	cmds[452].loc = &ob->pm.done_npoints;
-	cmds[453].loc = &ob->pm.done_active_power;
-	cmds[454].loc = &ob->pm.done_robot_power;
-	cmds[455].loc = &ob->pm.done_min_jerk_deviation;
-	cmds[456].loc = &ob->pm.done_min_jerk_dgraph;
-	cmds[457].loc = &ob->pm.done_jerkmag;
-	cmds[458].loc = &ob->pm.done_max_vel;
-	cmds[459].loc = &ob->pm.done_dist_straight_line_sq;
-	cmds[460].loc = &ob->pm.done_max_dist_along_axis;
-	cmds[461].loc = &ob->pm.done_min_dist_from_target;
-	cmds[462].loc = &ob->pm.done_hand_pct_in;
-	cmds[463].loc = &ob->pm.done_hand_pct_out;
+	cmds[142].loc = &ob->ankle.ueimf;
+	cmds[143].loc = &ob->ankle.rl_pfomax;
+	cmds[144].loc = &ob->ankle.rl_pfotest;
+	cmds[145].loc = &rob->ankle.left.enc_channel;
+	cmds[146].loc = &rob->ankle.left.disp;
+	cmds[147].loc = &rob->ankle.left.devtrq;
+	cmds[148].loc = &rob->ankle.left.xform;
+	cmds[149].loc = &rob->ankle.left.volts;
+	cmds[150].loc = &rob->ankle.left.force;
+	cmds[151].loc = &rob->ankle.left.test_volts;
+	cmds[152].loc = &rob->ankle.left.ao_channel;
+	cmds[153].loc = &rob->ankle.left.rot_enc_channel;
+	cmds[154].loc = &rob->ankle.left.rot_disp;
+	cmds[155].loc = &rob->ankle.left.rot_lin_disp;
+	cmds[156].loc = &rob->ankle.left.vel;
+	cmds[157].loc = &rob->ankle.left.rot_lin_vel;
+	cmds[158].loc = &rob->ankle.right.enc_channel;
+	cmds[159].loc = &rob->ankle.right.disp;
+	cmds[160].loc = &rob->ankle.right.devtrq;
+	cmds[161].loc = &rob->ankle.right.xform;
+	cmds[162].loc = &rob->ankle.right.volts;
+	cmds[163].loc = &rob->ankle.right.force;
+	cmds[164].loc = &rob->ankle.right.test_volts;
+	cmds[165].loc = &rob->ankle.right.ao_channel;
+	cmds[166].loc = &rob->ankle.right.rot_enc_channel;
+	cmds[167].loc = &rob->ankle.right.rot_disp;
+	cmds[168].loc = &rob->ankle.right.rot_lin_disp;
+	cmds[169].loc = &rob->ankle.right.vel;
+	cmds[170].loc = &rob->ankle.right.rot_lin_vel;
+	cmds[171].loc = &ob->have_ankle;
+	cmds[172].loc = &ob->ankle.pos.dp;
+	cmds[173].loc = &ob->ankle.vel.dp;
+	cmds[174].loc = &ob->ankle.fvel.dp;
+	cmds[175].loc = &ob->ankle.faccel.dp;
+	cmds[176].loc = &ob->ankle.ref_pos.dp;
+	cmds[177].loc = &ob->ankle.stiff_center.dp;
+	cmds[178].loc = &ob->ankle.accel.dp;
+	cmds[179].loc = &ob->ankle.torque.dp;
+	cmds[180].loc = &ob->ankle.moment_cmd.dp;
+	cmds[181].loc = &ob->ankle.offset.dp;
+	cmds[182].loc = &ob->ankle.norm.dp;
+	cmds[183].loc = &ob->ankle.back.dp;
+	cmds[184].loc = &ob->ankle.pos.ie;
+	cmds[185].loc = &ob->ankle.vel.ie;
+	cmds[186].loc = &ob->ankle.fvel.ie;
+	cmds[187].loc = &ob->ankle.faccel.ie;
+	cmds[188].loc = &ob->ankle.ref_pos.ie;
+	cmds[189].loc = &ob->ankle.stiff_center.ie;
+	cmds[190].loc = &ob->ankle.accel.ie;
+	cmds[191].loc = &ob->ankle.torque.ie;
+	cmds[192].loc = &ob->ankle.moment_cmd.ie;
+	cmds[193].loc = &ob->ankle.offset.ie;
+	cmds[194].loc = &ob->ankle.norm.ie;
+	cmds[195].loc = &ob->ankle.back.ie;
+	cmds[196].loc = &ob->ankle.accel_mag;
+	cmds[197].loc = &ob->ankle.vel_mag;
+	cmds[198].loc = &ob->ankle.safety_vel;
+	cmds[199].loc = &ob->ankle.safety_accel;
+	cmds[200].loc = &rob->ankle.trans.ratio;
+	cmds[201].loc = &rob->ankle.trans.lead;
+	cmds[202].loc = &rob->ankle.trans.ankle_ball_length;
+	cmds[203].loc = &rob->ankle.trans.ball_ball_width;
+	cmds[204].loc = &rob->ankle.trans.av_actuator_length;
+	cmds[205].loc = &rob->ankle.trans.av_shin_length;
+	cmds[206].loc = &rob->ankle.trans.enc_xform;
+	cmds[207].loc = &rob->ankle.trans.slip_thresh;
+	cmds[208].loc = &rob->ankle.uei_ao_board_handle;
+	cmds[209].loc = &rob->ankle.knee.channel;
+	cmds[210].loc = &rob->ankle.knee.raw;
+	cmds[211].loc = &rob->ankle.knee.xform1;
+	cmds[212].loc = &rob->ankle.knee.xform2;
+	cmds[213].loc = &rob->ankle.knee.bias;
+	cmds[214].loc = &rob->ankle.knee.gain;
+	cmds[215].loc = &rob->ankle.knee.angle;
+	cmds[216].loc = &ob->linear.stiff;
+	cmds[217].loc = &ob->linear.damp;
+	cmds[218].loc = &ob->linear.pfomax;
+	cmds[219].loc = &ob->linear.pfotest;
+	cmds[220].loc = &ob->linear.adap_going_up;
+	cmds[221].loc = &rob->linear.motor.enc_channel;
+	cmds[222].loc = &rob->linear.motor.disp;
+	cmds[223].loc = &rob->linear.motor.devfrc;
+	cmds[224].loc = &rob->linear.motor.xform;
+	cmds[225].loc = &rob->linear.motor.volts;
+	cmds[226].loc = &rob->linear.motor.test_volts;
+	cmds[227].loc = &rob->linear.motor.ao_channel;
+	cmds[228].loc = &rob->linear.motor.limit_volts;
+	cmds[229].loc = &rob->linear.motor.limit_channel;
+	cmds[230].loc = &ob->have_linear;
+	cmds[231].loc = &ob->linear.pos;
+	cmds[232].loc = &ob->linear.vel;
+	cmds[233].loc = &ob->linear.fvel;
+	cmds[234].loc = &ob->linear.force;
+	cmds[235].loc = &ob->linear.force_bias;
+	cmds[236].loc = &ob->linear.offset;
+	cmds[237].loc = &ob->linear.ref_pos;
+	cmds[238].loc = &ob->linear.back;
+	cmds[239].loc = &ob->linear.norm;
+	cmds[240].loc = &rob->linear.gears.ratio;
+	cmds[241].loc = &rob->linear.uei_ao_board_handle;
+	cmds[242].loc = &ob->hand.stiff;
+	cmds[243].loc = &ob->hand.damp;
+	cmds[244].loc = &ob->hand.pfomax;
+	cmds[245].loc = &ob->hand.pfotest;
+	cmds[246].loc = &ob->hand.adap_going_up;
+	cmds[247].loc = &rob->hand.motor.enc_channel;
+	cmds[248].loc = &rob->hand.motor.disp;
+	cmds[249].loc = &rob->hand.motor.devfrc;
+	cmds[250].loc = &rob->hand.motor.xform;
+	cmds[251].loc = &rob->hand.motor.bias;
+	cmds[252].loc = &rob->hand.motor.volts;
+	cmds[253].loc = &rob->hand.motor.test_volts;
+	cmds[254].loc = &rob->hand.motor.ao_channel;
+	cmds[255].loc = &rob->hand.motor.limit_volts;
+	cmds[256].loc = &rob->hand.motor.limit_channel;
+	cmds[257].loc = &ob->have_hand;
+	cmds[258].loc = &ob->hand.pos;
+	cmds[259].loc = &ob->hand.vel;
+	cmds[260].loc = &ob->hand.fvel;
+	cmds[261].loc = &ob->hand.force;
+	cmds[262].loc = &ob->hand.grasp;
+	cmds[263].loc = &ob->hand.force_bias;
+	cmds[264].loc = &ob->hand.ref_pos;
+	cmds[265].loc = &rob->hand.gears.ratio;
+	cmds[266].loc = &rob->hand.gears.xform;
+	cmds[267].loc = &rob->hand.gears.disp_xform;
+	cmds[268].loc = &rob->hand.gears.offset;
+	cmds[269].loc = &rob->hand.gears.span;
+	cmds[270].loc = &rob->hand.gears.gap;
+	cmds[271].loc = &rob->hand.uei_ao_board_handle;
+	cmds[272].loc = &ob->hand.active_power;
+	cmds[273].loc = &ob->hand.npoints;
+	cmds[274].loc = &daq->ain_bias_comp;
+	cmds[275].loc = &daq->ain_cfg;
+	cmds[276].loc = &daq->ain_slowbit;
+	cmds[277].loc = &daq->ain_got_samples;
+	cmds[278].loc = &daq->ain_ret;
+	cmds[279].loc = &daq->n_ueidaq_boards;
+	cmds[280].loc = &daq->uei_board[0];
+	cmds[281].loc = &ob->busy;
+	cmds[282].loc = &ob->curl;
+	cmds[283].loc = &ob->damp;
+	cmds[284].loc = &ob->const_force.x;
+	cmds[285].loc = &ob->const_force.y;
+	cmds[286].loc = &ob->quit;
+	cmds[287].loc = &ob->doinit;
+	cmds[288].loc = &ob->didinit;
+	cmds[289].loc = &ob->butcutoff;
+	cmds[290].loc = &ob->ddfifo;
+	cmds[291].loc = &ob->cififo;
+	cmds[292].loc = &ob->dififo;
+	cmds[293].loc = &ob->dofifo;
+	cmds[294].loc = &ob->eofifo;
+	cmds[295].loc = &ob->fifolen;
+	cmds[296].loc = &ob->tcfifo;
+	cmds[297].loc = &ob->ftfifo;
+	cmds[298].loc = &ob->ntickfifo;
+	cmds[299].loc = &ob->fttickfifo;
+	cmds[300].loc = &ob->motor_torque.s;
+	cmds[301].loc = &ob->motor_torque.e;
+	cmds[302].loc = &ob->motor_volts.s;
+	cmds[303].loc = &ob->motor_volts.e;
+	cmds[304].loc = &rob->link.s;
+	cmds[305].loc = &rob->link.e;
+	cmds[306].loc = &ob->have_planar;
+	cmds[307].loc = &ob->have_uei;
+	cmds[308].loc = &ob->have_tach;
+	cmds[309].loc = &ob->have_ft;
+	cmds[310].loc = &ob->have_grasp;
+	cmds[311].loc = &ob->have_accel;
+	cmds[312].loc = &ob->have_planar_incenc;
+	cmds[313].loc = &ob->have_planar_ao8;
+	cmds[314].loc = &ob->have_mf_aout_for_dout;
+	cmds[315].loc = &ob->ankle_debug_position;
+	cmds[316].loc = &ob->have_thermal_model;
+	cmds[317].loc = &ob->Hz;
+	cmds[318].loc = &ob->i;
+	cmds[319].loc = &ob->fasti;
+	cmds[320].loc = &ob->fastHz;
+	cmds[321].loc = &ob->fastirate;
+	cmds[322].loc = &ob->fastrate;
+	cmds[323].loc = &ob->ovsample;
+	cmds[324].loc = &ob->irate;
+	cmds[325].loc = &ob->disp[0];
+	cmds[326].loc = &ob->ndisp;
+	cmds[327].loc = &ob->log;
+	cmds[328].loc = &ob->nlog;
+	cmds[329].loc = &ob->logfnid;
+	cmds[330].loc = &ob->refin;
+	cmds[331].loc = &ob->nwref;
+	cmds[332].loc = &ob->nrref;
+	cmds[333].loc = &ob->reffnid;
+	cmds[334].loc = &ob->refri;
+	cmds[335].loc = &ob->refwi;
+	cmds[336].loc = &ob->refterm;
+	cmds[337].loc = &ob->ref_switchback_go;
+	cmds[338].loc = &rob->offset.x;
+	cmds[339].loc = &rob->offset.y;
+	cmds[340].loc = &ob->paused;
+	cmds[341].loc = &ob->fault;
+	cmds[342].loc = &ob->stiffener;
+	cmds[343].loc = &ob->stiff_delta;
+	cmds[344].loc = &ob->no_motors;
+	cmds[345].loc = &ob->pi;
+	cmds[346].loc = &ob->pfomax;
+	cmds[347].loc = &ob->pfotest;
+	cmds[348].loc = &ob->impulse_thresh_volts;
+	cmds[349].loc = &ob->dvolts.s;
+	cmds[350].loc = &ob->dvolts.e;
+	cmds[351].loc = &ob->rate;
+	cmds[352].loc = &ob->restart.damp;
+	cmds[353].loc = &ob->restart.go;
+	cmds[354].loc = &ob->restart.Hz;
+	cmds[355].loc = &ob->restart.ovsample;
+	cmds[356].loc = &ob->restart.stiff;
+	cmds[357].loc = &ob->safety.override;
+	cmds[358].loc = &ob->safety.damping_nms;
+	cmds[359].loc = &ob->safety.pos;
+	cmds[360].loc = &ob->safety.torque;
+	cmds[361].loc = &ob->safety.ramp;
+	cmds[362].loc = &ob->safety.vel;
+	cmds[363].loc = &ob->safety.planar_just_crossed_back;
+	cmds[364].loc = &ob->safety.was_planar_damping;
+	cmds[365].loc = &ob->safety.damp_ret_ticks;
+	cmds[366].loc = &ob->safety.damp_ret_secs;
+	cmds[367].loc = &ob->samplenum;
+	cmds[368].loc = &ob->vibrate;
+	cmds[369].loc = &ob->xvibe;
+	cmds[370].loc = &ob->yvibe;
+	cmds[371].loc = &ob->tsvibe;
+	cmds[372].loc = &ob->tevibe;
+	cmds[373].loc = &ob->tvibamp;
+	cmds[374].loc = &ob->test_raw_torque;
+	cmds[375].loc = &ob->raw_torque_volts.s;
+	cmds[376].loc = &ob->raw_torque_volts.e;
+	cmds[377].loc = &ob->test_no_torque;
+	cmds[378].loc = &ob->sin_amplitude;
+	cmds[379].loc = &ob->sin_period;
+	cmds[380].loc = &ob->sin_which_motor;
+	cmds[381].loc = &ob->sim.sensors;
+	cmds[382].loc = &ob->sim.pos.x;
+	cmds[383].loc = &ob->sim.pos.y;
+	cmds[384].loc = &ob->sim.wr_pos.fe;
+	cmds[385].loc = &ob->sim.wr_pos.ps;
+	cmds[386].loc = &ob->sim.wr_pos.aa;
+	cmds[387].loc = &ob->sim.vel.x;
+	cmds[388].loc = &ob->sim.vel.y;
+	cmds[389].loc = &ob->sim.wr_vel.fe;
+	cmds[390].loc = &ob->sim.wr_vel.ps;
+	cmds[391].loc = &ob->sim.wr_vel.aa;
+	cmds[392].loc = &ob->req_pos.x;
+	cmds[393].loc = &ob->req_pos.y;
+	cmds[394].loc = &ob->pos_error.mod;
+	cmds[395].loc = &ob->pos_error.dx;
+	cmds[396].loc = &ob->pos_error.dy;
+	cmds[397].loc = &ob->copy_slot.id;
+	cmds[398].loc = &ob->copy_slot.i;
+	cmds[399].loc = &ob->copy_slot.incr;
+	cmds[400].loc = &ob->copy_slot.term;
+	cmds[401].loc = &ob->copy_slot.termi;
+	cmds[402].loc = &ob->copy_slot.b0.point.x;
+	cmds[403].loc = &ob->copy_slot.b0.point.y;
+	cmds[404].loc = &ob->copy_slot.b0.w;
+	cmds[405].loc = &ob->copy_slot.b0.h;
+	cmds[406].loc = &ob->copy_slot.b1.point.x;
+	cmds[407].loc = &ob->copy_slot.b1.point.y;
+	cmds[408].loc = &ob->copy_slot.b1.w;
+	cmds[409].loc = &ob->copy_slot.b1.h;
+	cmds[410].loc = &ob->copy_slot.fnid;
+	cmds[411].loc = &ob->copy_slot.rot;
+	cmds[412].loc = &ob->copy_slot.go;
+	cmds[413].loc = &ob->copy_slot.running;
+	cmds[414].loc = &ob->slot_max;
+	cmds[415].loc = &ob->slot[0].id;
+	cmds[416].loc = &ob->slot[0].i;
+	cmds[417].loc = &ob->slot[0].incr;
+	cmds[418].loc = &ob->slot[0].term;
+	cmds[419].loc = &ob->slot[0].termi;
+	cmds[420].loc = &ob->slot[0].b0.point.x;
+	cmds[421].loc = &ob->slot[0].b0.point.y;
+	cmds[422].loc = &ob->slot[0].b0.w;
+	cmds[423].loc = &ob->slot[0].b0.h;
+	cmds[424].loc = &ob->slot[0].b1.point.x;
+	cmds[425].loc = &ob->slot[0].b1.point.y;
+	cmds[426].loc = &ob->slot[0].b1.w;
+	cmds[427].loc = &ob->slot[0].b1.h;
+	cmds[428].loc = &ob->slot[0].bcur.point.x;
+	cmds[429].loc = &ob->slot[0].bcur.point.y;
+	cmds[430].loc = &ob->slot[0].bcur.w;
+	cmds[431].loc = &ob->slot[0].bcur.h;
+	cmds[432].loc = &ob->slot[0].fnid;
+	cmds[433].loc = &ob->slot[0].rot;
+	cmds[434].loc = &ob->slot[0].running;
+	cmds[435].loc = &ob->slot[0].go;
+	cmds[436].loc = &ob->slot[1].b0.point.x;
+	cmds[437].loc = &ob->slot[1].b0.point.y;
+	cmds[438].loc = &ob->slot[1].b0.w;
+	cmds[439].loc = &ob->slot[1].b0.h;
+	cmds[440].loc = &ob->pm.active_power;
+	cmds[441].loc = &ob->pm.robot_power;
+	cmds[442].loc = &ob->pm.min_jerk_deviation;
+	cmds[443].loc = &ob->pm.min_jerk_dgraph;
+	cmds[444].loc = &ob->pm.jerkmag;
+	cmds[445].loc = &ob->pm.dist_straight_line;
+	cmds[446].loc = &ob->pm.max_dist_along_axis;
+	cmds[447].loc = &ob->pm.min_dist_from_target;
+	cmds[448].loc = &ob->pm.max_vel;
+	cmds[449].loc = &ob->pm.npoints;
+	cmds[450].loc = &ob->pm.five_d;
+	cmds[451].loc = &ob->pm.done_npoints;
+	cmds[452].loc = &ob->pm.done_active_power;
+	cmds[453].loc = &ob->pm.done_robot_power;
+	cmds[454].loc = &ob->pm.done_min_jerk_deviation;
+	cmds[455].loc = &ob->pm.done_min_jerk_dgraph;
+	cmds[456].loc = &ob->pm.done_jerkmag;
+	cmds[457].loc = &ob->pm.done_max_vel;
+	cmds[458].loc = &ob->pm.done_dist_straight_line_sq;
+	cmds[459].loc = &ob->pm.done_max_dist_along_axis;
+	cmds[460].loc = &ob->pm.done_min_dist_from_target;
+	cmds[461].loc = &ob->pm.done_hand_pct_in;
+	cmds[462].loc = &ob->pm.done_hand_pct_out;
+	cmds[463].loc = &ob->scr[0];
 	cmds[464].loc = &ob->scr[0];
-	cmds[465].loc = &ob->scr[0];
-	cmds[466].loc = &ob->scr[1];
-	cmds[467].loc = &ob->scr[2];
-	cmds[468].loc = &ob->scr[3];
-	cmds[469].loc = &ob->scr[4];
-	cmds[470].loc = &ob->scr[5];
-	cmds[471].loc = &ob->scr[6];
-	cmds[472].loc = &ob->scr[7];
-	cmds[473].loc = &ob->aodiff[0];
-	cmds[474].loc = &ob->aocum[0];
-	cmds[475].loc = &ob->aorms[0];
-	cmds[476].loc = &ob->aocum1[0];
-	cmds[477].loc = &ob->aoavg[0];
-	cmds[478].loc = &ob->aocount;
-	cmds[479].loc = &ob->pl_stopspan;
-	cmds[480].loc = &ob->pl_linkspan;
-	cmds[481].loc = &ob->pl_vbig;
-	cmds[482].loc = &ob->pl_vsmall;
-	cmds[483].loc = &ob->pl_vtiny;
-	cmds[484].loc = &ob->pl_slop;
-	cmds[485].loc = &ob->ha_vbig;
-	cmds[486].loc = &ob->ha_vsmall;
-	cmds[487].loc = &ob->ha_slop;
-	cmds[488].loc = &ob->wr_diffslop;
-	cmds[489].loc = &ob->wr_psslop;
-	cmds[490].loc = &ob->wr_rspan;
-	cmds[491].loc = &ob->wr_lspan;
-	cmds[492].loc = &ob->wr_psspan;
-	cmds[493].loc = &ob->wr_vbig;
-	cmds[494].loc = &ob->wr_vsmall;
-	cmds[495].loc = &daq->m_dienc[0][0];
-	cmds[496].loc = &daq->dienc_vel[0];
-	cmds[497].loc = &daq->dienc_accel[0];
-	cmds[498].loc = &daq->diovs;
-	cmds[499].loc = &daq->m_dout_buf[0];
-	cmds[500].loc = &daq->dout0;
-	cmds[501].loc = &daq->dout1;
-	cmds[502].loc = &daq->m_adc[0][0];
-	cmds[503].loc = &daq->m_dac[0][0];
+	cmds[465].loc = &ob->scr[1];
+	cmds[466].loc = &ob->scr[2];
+	cmds[467].loc = &ob->scr[3];
+	cmds[468].loc = &ob->scr[4];
+	cmds[469].loc = &ob->scr[5];
+	cmds[470].loc = &ob->scr[6];
+	cmds[471].loc = &ob->scr[7];
+	cmds[472].loc = &ob->aodiff[0];
+	cmds[473].loc = &ob->aocum[0];
+	cmds[474].loc = &ob->aorms[0];
+	cmds[475].loc = &ob->aocum1[0];
+	cmds[476].loc = &ob->aoavg[0];
+	cmds[477].loc = &ob->aocount;
+	cmds[478].loc = &ob->pl_stopspan;
+	cmds[479].loc = &ob->pl_linkspan;
+	cmds[480].loc = &ob->pl_vbig;
+	cmds[481].loc = &ob->pl_vsmall;
+	cmds[482].loc = &ob->pl_vtiny;
+	cmds[483].loc = &ob->pl_slop;
+	cmds[484].loc = &ob->ha_vbig;
+	cmds[485].loc = &ob->ha_vsmall;
+	cmds[486].loc = &ob->ha_slop;
+	cmds[487].loc = &ob->wr_diffslop;
+	cmds[488].loc = &ob->wr_psslop;
+	cmds[489].loc = &ob->wr_rspan;
+	cmds[490].loc = &ob->wr_lspan;
+	cmds[491].loc = &ob->wr_psspan;
+	cmds[492].loc = &ob->wr_vbig;
+	cmds[493].loc = &ob->wr_vsmall;
+	cmds[494].loc = &daq->m_dienc[0][0];
+	cmds[495].loc = &daq->dienc_vel[0];
+	cmds[496].loc = &daq->dienc_accel[0];
+	cmds[497].loc = &daq->diovs;
+	cmds[498].loc = &daq->m_dout_buf[0];
+	cmds[499].loc = &daq->dout0;
+	cmds[500].loc = &daq->dout1;
+	cmds[501].loc = &daq->m_adc[0][0];
+	cmds[502].loc = &daq->m_dac[0][0];
+	cmds[503].loc = &daq->m_adcvolts[0][0];
 	cmds[504].loc = &daq->m_adcvolts[0][0];
-	cmds[505].loc = &daq->m_adcvolts[0][0];
-	cmds[506].loc = &daq->m_adcvolts[0][1];
-	cmds[507].loc = &daq->m_adcvolts[0][2];
-	cmds[508].loc = &daq->m_adcvolts[0][3];
-	cmds[509].loc = &daq->m_adcvoltsmean[0][0];
-	cmds[510].loc = &daq->m_adcvoltsmed[0][0];
-	cmds[511].loc = &daq->m_dacvolts[0][0];
-	cmds[512].loc = &daq->distat[0];
-	cmds[513].loc = &rob->ft.flip;
-	cmds[514].loc = &rob->ft.vert;
-	cmds[515].loc = &rob->ft.have_rotmat;
-	cmds[516].loc = &rob->ft.rotmat_setup_done;
-	cmds[517].loc = &rob->ft.rot.x;
-	cmds[518].loc = &rob->ft.rot.y;
-	cmds[519].loc = &rob->ft.rot.z;
-	cmds[520].loc = &rob->ft.righthand;
-	cmds[521].loc = &rob->ft.pre_jac.x;
-	cmds[522].loc = &rob->ft.pre_jac.y;
-	cmds[523].loc = &rob->ft.pre_jac.z;
-	cmds[524].loc = &rob->ft.rotmat[0][0];
-	cmds[525].loc = &rob->ft.dobias;
-	cmds[526].loc = &rob->ft.offset;
-	cmds[527].loc = &rob->ft.channel[0];
-	cmds[528].loc = &rob->ft.raw[0];
-	cmds[529].loc = &rob->ft.curr[0];
-	cmds[530].loc = &rob->ft.prev[0];
-	cmds[531].loc = &rob->ft.filt[0];
-	cmds[532].loc = &rob->ft.sg[0];
-	cmds[533].loc = &rob->ft.prevf[0];
-	cmds[534].loc = &rob->ft.world.x;
-	cmds[535].loc = &rob->ft.world.y;
-	cmds[536].loc = &rob->ft.world.z;
-	cmds[537].loc = &rob->ft.dev.x;
-	cmds[538].loc = &rob->ft.dev.y;
-	cmds[539].loc = &rob->ft.dev.z;
-	cmds[540].loc = &rob->ft.moment.x;
-	cmds[541].loc = &rob->ft.moment.y;
-	cmds[542].loc = &rob->ft.moment.z;
-	cmds[543].loc = &rob->ft.xymag;
-	cmds[544].loc = &rob->ft.cal[0][0];
-	cmds[545].loc = &rob->ft.scale[0];
-	cmds[546].loc = &rob->ft.bias[0];
-	cmds[547].loc = &rob->ft.cooked[0];
-	cmds[548].loc = &rob->ft.avg[0];
-	cmds[549].loc = &rob->ft.sghist[0][0];
-	cmds[550].loc = &rob->ft.status;
-	cmds[551].loc = &rob->ft.cal[0][1];
-	cmds[552].loc = &rob->ft.cal[1][0];
-	cmds[553].loc = &rob->ft.cal[1][1];
-	cmds[554].loc = &rob->accel.channel[0];
-	cmds[555].loc = &rob->accel.raw[0];
-	cmds[556].loc = &rob->accel.curr[0];
-	cmds[557].loc = &rob->accel.bias[0];
-	cmds[558].loc = &rob->accel.xform;
-	cmds[559].loc = &rob->accel.filt[0];
-	cmds[560].loc = &rob->accel.filt[1];
-	cmds[561].loc = &rob->accel.filt[2];
-	cmds[562].loc = &rob->grasp.channel;
-	cmds[563].loc = &rob->grasp.raw;
-	cmds[564].loc = &rob->grasp.bias;
-	cmds[565].loc = &rob->grasp.cal;
-	cmds[566].loc = &rob->grasp.gain;
-	cmds[567].loc = &rob->grasp.force;
-	cmds[568].loc = &ob->have_can;
-	cmds[569].loc = &rob->can.fd;
-	cmds[570].loc = &rob->can.axis;
-	cmds[571].loc = &rob->can.value;
-	cmds[572].loc = &rob->can.analog1;
-	cmds[573].loc = &rob->can.analog2;
-	cmds[574].loc = &rob->can.pos_raw;
-	cmds[575].loc = &rob->can.pos2_raw;
-	cmds[576].loc = &rob->can.vel_raw;
-	cmds[577].loc = &rob->can.read_error;
-	cmds[578].loc = &rob->can.status;
-	cmds[579].loc = &rob->can.bitmask;
-	cmds[580].loc = &rob->can.recv_count;
-	cmds[581].loc = &rob->can.pos_sync_time;
-	cmds[582].loc = &rob->can.pos_time;
-	cmds[583].loc = &rob->can.max_pos_time;
-	cmds[584].loc = &rob->can.pos_wait_time;
-	cmds[585].loc = &rob->can.setct;
-	cmds[586].loc = &ob->naxes;
-	cmds[587].loc = &ob->rshm_count;
-	cmds[588].loc = &ob->wshm_count;
-	cmds[589].loc = &rob->pci4e.have;
-	cmds[590].loc = &rob->pci4e.bar;
-	cmds[591].loc = &rob->pci4e.remap;
-	cmds[592].loc = &rob->pci4e.len;
-	cmds[593].loc = &rob->pci4e.dev;
-	cmds[594].loc = &rob->pci4e.enc;
-	cmds[595].loc = &rob->pci4e.lenc;
-	cmds[596].loc = &rob->pci4e.raw;
-	cmds[597].loc = &rob->pci4e.ret;
-	cmds[598].loc = &rob->pci4e.nerrs;
-	cmds[599].loc = &rob->pci4e.lastret;
-	cmds[600].loc = &rob->pci4e.limit;
-	cmds[601].loc = &rob->pci4e.scale;
-	cmds[602].loc = &rob->pci4e.zero;
-	cmds[603].loc = &rob->pci4e.dosetct;
-	cmds[604].loc = &rob->pci4e.setct;
-	cmds[605].loc = &ob->stiff;
-	cmds[606].loc = &ob->side_stiff;
-	cmds[607].loc = &ob->tag[0];
-	cmds[608].loc = &ob->times.time_after_last_sample;
-	cmds[609].loc = &ob->times.time_after_sample;
-	cmds[610].loc = &ob->times.time_at_start;
-	cmds[611].loc = &ob->times.time_before_last_sample;
-	cmds[612].loc = &ob->times.time_before_sample;
-	cmds[613].loc = &ob->times.time_delta_call;
-	cmds[614].loc = &ob->times.time_delta_sample;
-	cmds[615].loc = &ob->times.time_delta_tick;
-	cmds[616].loc = &ob->times.time_since_start;
-	cmds[617].loc = &ob->times.ns_delta_call;
-	cmds[618].loc = &ob->times.ns_delta_sample;
-	cmds[619].loc = &ob->times.ns_delta_tick;
-	cmds[620].loc = &ob->times.ms_since_start;
-	cmds[621].loc = &ob->times.sec;
-	cmds[622].loc = &ob->times.ns_delta_sample_thresh;
-	cmds[623].loc = &ob->times.ns_delta_tick_thresh;
-	cmds[624].loc = &ob->times.ns_max_delta_sample;
-	cmds[625].loc = &ob->times.ns_max_delta_tick;
-	cmds[626].loc = &ob->total_samples;
-	cmds[627].loc = &ob->pos.x;
-	cmds[628].loc = &ob->pos.y;
-	cmds[629].loc = &ob->ref.pos.x;
-	cmds[630].loc = &ob->ref.pos.y;
-	cmds[631].loc = &ob->motor_force.x;
-	cmds[632].loc = &ob->motor_force.y;
-	cmds[633].loc = &ob->soft_vel.x;
-	cmds[634].loc = &ob->soft_vel.y;
-	cmds[635].loc = &ob->fsoft_vel.x;
-	cmds[636].loc = &ob->fsoft_vel.y;
-	cmds[637].loc = &ob->tach_vel.x;
-	cmds[638].loc = &ob->tach_vel.y;
-	cmds[639].loc = &ob->vel.x;
-	cmds[640].loc = &ob->vel.y;
-	cmds[641].loc = &ob->velmag;
-	cmds[642].loc = &ob->soft_accel.x;
-	cmds[643].loc = &ob->soft_accel.y;
-	cmds[644].loc = &ob->soft_accelmag;
-	cmds[645].loc = &ob->soft_jerk.x;
-	cmds[646].loc = &ob->soft_jerk.y;
-	cmds[647].loc = &ob->soft_jerkmag;
-	cmds[648].loc = &ob->theta.s;
-	cmds[649].loc = &ob->theta.e;
-	cmds[650].loc = &ob->thetadot.s;
-	cmds[651].loc = &ob->thetadot.e;
-	cmds[652].loc = &ob->spring.ref.s;
-	cmds[653].loc = &ob->spring.ref.e;
-	cmds[654].loc = &ob->spring.stiff.s;
-	cmds[655].loc = &ob->spring.stiff.e;
-	cmds[656].loc = &ob->spring.disp.s;
-	cmds[657].loc = &ob->spring.disp.e;
-	cmds[658].loc = &ob->back.x;
-	cmds[659].loc = &ob->back.y;
-	cmds[660].loc = &ob->norm.x;
-	cmds[661].loc = &ob->norm.y;
-	cmds[662].loc = &ob->planar_uei_ao_board_handle;
-	cmds[663].loc = &ob->errnum;
-	cmds[664].loc = &ob->nerrors;
-	cmds[665].loc = &ob->errori[0];
-	cmds[666].loc = &ob->errorcode[0];
-	cmds[667].loc = &ob->errorindex;
-	cmds[668].loc = &refbuf->refarr[0][0];
-	cmds[669].loc = &ob->asciilog;
-	cmds[670].loc = &ob->targetnumber;
-	cmds[671].loc = &ob->last_shm_val;
+	cmds[505].loc = &daq->m_adcvolts[0][1];
+	cmds[506].loc = &daq->m_adcvolts[0][2];
+	cmds[507].loc = &daq->m_adcvolts[0][3];
+	cmds[508].loc = &daq->m_adcvoltsmean[0][0];
+	cmds[509].loc = &daq->m_adcvoltsmed[0][0];
+	cmds[510].loc = &daq->m_dacvolts[0][0];
+	cmds[511].loc = &daq->distat[0];
+	cmds[512].loc = &rob->ft.flip;
+	cmds[513].loc = &rob->ft.vert;
+	cmds[514].loc = &rob->ft.have_rotmat;
+	cmds[515].loc = &rob->ft.rotmat_setup_done;
+	cmds[516].loc = &rob->ft.rot.x;
+	cmds[517].loc = &rob->ft.rot.y;
+	cmds[518].loc = &rob->ft.rot.z;
+	cmds[519].loc = &rob->ft.righthand;
+	cmds[520].loc = &rob->ft.pre_jac.x;
+	cmds[521].loc = &rob->ft.pre_jac.y;
+	cmds[522].loc = &rob->ft.pre_jac.z;
+	cmds[523].loc = &rob->ft.rotmat[0][0];
+	cmds[524].loc = &rob->ft.dobias;
+	cmds[525].loc = &rob->ft.offset;
+	cmds[526].loc = &rob->ft.channel[0];
+	cmds[527].loc = &rob->ft.raw[0];
+	cmds[528].loc = &rob->ft.curr[0];
+	cmds[529].loc = &rob->ft.prev[0];
+	cmds[530].loc = &rob->ft.filt[0];
+	cmds[531].loc = &rob->ft.sg[0];
+	cmds[532].loc = &rob->ft.prevf[0];
+	cmds[533].loc = &rob->ft.world.x;
+	cmds[534].loc = &rob->ft.world.y;
+	cmds[535].loc = &rob->ft.world.z;
+	cmds[536].loc = &rob->ft.dev.x;
+	cmds[537].loc = &rob->ft.dev.y;
+	cmds[538].loc = &rob->ft.dev.z;
+	cmds[539].loc = &rob->ft.moment.x;
+	cmds[540].loc = &rob->ft.moment.y;
+	cmds[541].loc = &rob->ft.moment.z;
+	cmds[542].loc = &rob->ft.xymag;
+	cmds[543].loc = &rob->ft.cal[0][0];
+	cmds[544].loc = &rob->ft.scale[0];
+	cmds[545].loc = &rob->ft.bias[0];
+	cmds[546].loc = &rob->ft.cooked[0];
+	cmds[547].loc = &rob->ft.avg[0];
+	cmds[548].loc = &rob->ft.sghist[0][0];
+	cmds[549].loc = &rob->ft.status;
+	cmds[550].loc = &rob->ft.cal[0][1];
+	cmds[551].loc = &rob->ft.cal[1][0];
+	cmds[552].loc = &rob->ft.cal[1][1];
+	cmds[553].loc = &rob->accel.channel[0];
+	cmds[554].loc = &rob->accel.raw[0];
+	cmds[555].loc = &rob->accel.curr[0];
+	cmds[556].loc = &rob->accel.bias[0];
+	cmds[557].loc = &rob->accel.xform;
+	cmds[558].loc = &rob->accel.filt[0];
+	cmds[559].loc = &rob->accel.filt[1];
+	cmds[560].loc = &rob->accel.filt[2];
+	cmds[561].loc = &rob->grasp.channel;
+	cmds[562].loc = &rob->grasp.raw;
+	cmds[563].loc = &rob->grasp.bias;
+	cmds[564].loc = &rob->grasp.cal;
+	cmds[565].loc = &rob->grasp.gain;
+	cmds[566].loc = &rob->grasp.force;
+	cmds[567].loc = &ob->have_can;
+	cmds[568].loc = &rob->can.fd;
+	cmds[569].loc = &rob->can.axis;
+	cmds[570].loc = &rob->can.value;
+	cmds[571].loc = &rob->can.analog1;
+	cmds[572].loc = &rob->can.analog2;
+	cmds[573].loc = &rob->can.pos_raw;
+	cmds[574].loc = &rob->can.pos2_raw;
+	cmds[575].loc = &rob->can.vel_raw;
+	cmds[576].loc = &rob->can.read_error;
+	cmds[577].loc = &rob->can.status;
+	cmds[578].loc = &rob->can.bitmask;
+	cmds[579].loc = &rob->can.recv_count;
+	cmds[580].loc = &rob->can.pos_sync_time;
+	cmds[581].loc = &rob->can.pos_time;
+	cmds[582].loc = &rob->can.max_pos_time;
+	cmds[583].loc = &rob->can.pos_wait_time;
+	cmds[584].loc = &rob->can.setct;
+	cmds[585].loc = &ob->naxes;
+	cmds[586].loc = &ob->rshm_count;
+	cmds[587].loc = &ob->wshm_count;
+	cmds[588].loc = &rob->pci4e.have;
+	cmds[589].loc = &rob->pci4e.bar;
+	cmds[590].loc = &rob->pci4e.remap;
+	cmds[591].loc = &rob->pci4e.len;
+	cmds[592].loc = &rob->pci4e.dev;
+	cmds[593].loc = &rob->pci4e.enc;
+	cmds[594].loc = &rob->pci4e.lenc;
+	cmds[595].loc = &rob->pci4e.raw;
+	cmds[596].loc = &rob->pci4e.ret;
+	cmds[597].loc = &rob->pci4e.nerrs;
+	cmds[598].loc = &rob->pci4e.lastret;
+	cmds[599].loc = &rob->pci4e.limit;
+	cmds[600].loc = &rob->pci4e.scale;
+	cmds[601].loc = &rob->pci4e.zero;
+	cmds[602].loc = &rob->pci4e.dosetct;
+	cmds[603].loc = &rob->pci4e.setct;
+	cmds[604].loc = &ob->stiff;
+	cmds[605].loc = &ob->side_stiff;
+	cmds[606].loc = &ob->tag[0];
+	cmds[607].loc = &ob->times.time_after_last_sample;
+	cmds[608].loc = &ob->times.time_after_sample;
+	cmds[609].loc = &ob->times.time_at_start;
+	cmds[610].loc = &ob->times.time_before_last_sample;
+	cmds[611].loc = &ob->times.time_before_sample;
+	cmds[612].loc = &ob->times.time_delta_call;
+	cmds[613].loc = &ob->times.time_delta_sample;
+	cmds[614].loc = &ob->times.time_delta_tick;
+	cmds[615].loc = &ob->times.time_since_start;
+	cmds[616].loc = &ob->times.ns_delta_call;
+	cmds[617].loc = &ob->times.ns_delta_sample;
+	cmds[618].loc = &ob->times.ns_delta_tick;
+	cmds[619].loc = &ob->times.ms_since_start;
+	cmds[620].loc = &ob->times.sec;
+	cmds[621].loc = &ob->times.ns_delta_sample_thresh;
+	cmds[622].loc = &ob->times.ns_delta_tick_thresh;
+	cmds[623].loc = &ob->times.ns_max_delta_sample;
+	cmds[624].loc = &ob->times.ns_max_delta_tick;
+	cmds[625].loc = &ob->total_samples;
+	cmds[626].loc = &ob->pos.x;
+	cmds[627].loc = &ob->pos.y;
+	cmds[628].loc = &ob->ref.pos.x;
+	cmds[629].loc = &ob->ref.pos.y;
+	cmds[630].loc = &ob->motor_force.x;
+	cmds[631].loc = &ob->motor_force.y;
+	cmds[632].loc = &ob->soft_vel.x;
+	cmds[633].loc = &ob->soft_vel.y;
+	cmds[634].loc = &ob->fsoft_vel.x;
+	cmds[635].loc = &ob->fsoft_vel.y;
+	cmds[636].loc = &ob->tach_vel.x;
+	cmds[637].loc = &ob->tach_vel.y;
+	cmds[638].loc = &ob->vel.x;
+	cmds[639].loc = &ob->vel.y;
+	cmds[640].loc = &ob->velmag;
+	cmds[641].loc = &ob->soft_accel.x;
+	cmds[642].loc = &ob->soft_accel.y;
+	cmds[643].loc = &ob->soft_accelmag;
+	cmds[644].loc = &ob->soft_jerk.x;
+	cmds[645].loc = &ob->soft_jerk.y;
+	cmds[646].loc = &ob->soft_jerkmag;
+	cmds[647].loc = &ob->theta.s;
+	cmds[648].loc = &ob->theta.e;
+	cmds[649].loc = &ob->thetadot.s;
+	cmds[650].loc = &ob->thetadot.e;
+	cmds[651].loc = &ob->spring.ref.s;
+	cmds[652].loc = &ob->spring.ref.e;
+	cmds[653].loc = &ob->spring.stiff.s;
+	cmds[654].loc = &ob->spring.stiff.e;
+	cmds[655].loc = &ob->spring.disp.s;
+	cmds[656].loc = &ob->spring.disp.e;
+	cmds[657].loc = &ob->back.x;
+	cmds[658].loc = &ob->back.y;
+	cmds[659].loc = &ob->norm.x;
+	cmds[660].loc = &ob->norm.y;
+	cmds[661].loc = &ob->planar_uei_ao_board_handle;
+	cmds[662].loc = &ob->errnum;
+	cmds[663].loc = &ob->nerrors;
+	cmds[664].loc = &ob->errori[0];
+	cmds[665].loc = &ob->errorcode[0];
+	cmds[666].loc = &ob->errorindex;
+	cmds[667].loc = &refbuf->refarr[0][0];
+	cmds[668].loc = &ob->asciilog;
+	cmds[669].loc = &ob->targetnumber;
+	cmds[670].loc = &ob->last_shm_val;
 }
