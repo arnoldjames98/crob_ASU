@@ -496,6 +496,7 @@ ankle_stiff_ctl(u32 id)
 
     f64 stiff_DP, stiff_IE, stiff_k12, stiff_k21, damp_DP, damp_IE, torque_IE, pos_equil_DP, pos_equil_IE;
 
+    // Rename variables from shared memory
     stiff_DP = ob->ankle.stiff_DP;
     stiff_IE = ob->ankle.stiff_IE;
     stiff_k12 = ob->ankle.stiff_k12;
