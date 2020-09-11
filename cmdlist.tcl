@@ -163,6 +163,8 @@ set cmdlist {
     {so_f64 ankle_damp_DP &ob->ankle.damp_DP 1}
     {so_f64 ankle_damp_IE &ob->ankle.damp_IE 1}
     {so_f64 ankle_varDamp_K &ob->ankle.varDamp_K 1}
+    {so_f64 ankle_stiff_slope &ob->ankle.stiff_slope 1}
+    {so_f64 ankle_stiff_intercept &ob->ankle.stiff_intercept 1}
     {so_f64 ankle_target_Distance &ob->ankle.target_Distance 1}
     {so_f64 ankle_target_Distance_IE &ob->ankle.target_Distance_IE 1}
     {so_f64 ankle_target_Distance_DP &ob->ankle.target_Distance_DP 1}

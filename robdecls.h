@@ -298,6 +298,8 @@ typedef struct ankle_ob_s {                      // ankle world coordinates
     f64 gravityTorque;    // HL (20160606)	
     f64 torque_IE;	// HH (20160616)
     f64 varDamp_K;   // HL (20190110)
+    f64 stiff_slope; //JA (20200911)
+    f64 stiff_intercept; //JA (20200911)
     f64 rl_pfomax;
     f64 rl_pfotest;
     u32 ueimf;

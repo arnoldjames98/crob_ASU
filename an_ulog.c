@@ -334,3 +334,68 @@ write_ankle_ASU_2D(void)
     log_write(&(ob->dofifo), ob->log, (sizeof(ob->log[0]) * ob->nlog), P_NORMAL);
     
 }
+
+
+// James Arnold (2020.09.11) This is used for the 2D study with variable stiffness
+void
+write_ankle_ASU_2D_stiff(void)
+{
+    s32 j;
+
+    if (ob->nlog < 1)
+        return;
+
+    j = 0;
+    // Time
+    ob->log[j++] = (f64) ob->i;                     //1
+    ob->log[j++] = ob->times.time_since_start;      //2
+
+    // Position
+    ob->log[j++] = ob->ankle.pos.ie;                //3
+    ob->log[j++] = ob->ankle.pos.dp;                //4
+
+    // Velocity
+    ob->log[j++] = ob->ankle.vel.ie;                //5
+    ob->log[j++] = ob->ankle.vel.dp;                //6
+    ob->log[j++] = ob->ankle.fvel.ie;               //7
+    ob->log[j++] = ob->ankle.fvel.dp;               //8
+
+    // Acceleration
+    ob->log[j++] = ob->ankle.accel.ie;              //9
+    ob->log[j++] = ob->ankle.accel.dp;              //10
+    ob->log[j++] = ob->ankle.faccel.ie;             //11
+    ob->log[j++] = ob->ankle.faccel.dp;             //12
+
+    // Command Torque // Yeonhun Ryu
+    ob->log[j++] = ob->ankle.moment_cmd.ie;         //13
+    ob->log[j++] = ob->ankle.moment_cmd.dp;         //14
+
+    // Target Distance on GUI
+    ob->log[j++] = ob->ankle.target_Distance_IE;    //15
+    ob->log[j++] = ob->ankle.target_Distance_DP;    //16
+
+    // EMG
+    ob->log[j++] = daq->adcvolts[0];                //17 (Tib Ant)
+    ob->log[j++] = daq->adcvolts[1];                //18 (Per Lon)
+    ob->log[j++] = daq->adcvolts[2];                //19 (Sol)
+    ob->log[j++] = daq->adcvolts[3];                //20 (Med Gas)
+
+    // Force
+    ob->log[j++] = daq->adcvolts[4];                //21 (Load cell Left)
+    ob->log[j++] = daq->adcvolts[5];                //22 (Load cell Right)
+
+    // Damping
+    ob->log[j++] = ob->ankle.varDamp_K;             //23
+    ob->log[j++] = ob->ankle.damp_IE;               //24
+    ob->log[j++] = ob->ankle.damp_DP;               //25
+
+    // Stiffness
+    ob->log[j++] = ob->ankle.stiff_IE;              //26
+    ob->log[j++] = ob->ankle.stiff_DP;              //27
+    ob->log[j++] = ob->ankle.stiff_slope;           //28
+    ob->log[j++] = ob->ankle.stiff_intercept;       //29
+
+    
+    log_write(&(ob->dofifo), ob->log, (sizeof(ob->log[0]) * ob->nlog), P_NORMAL);
+    
+}

@@ -51,6 +51,8 @@ void write_ankle_ped_fifo_fn(void);
 void write_ankle_ASU(void);
 // James Arnold (2020.01.29)
 void write_ankle_ASU_2D(void);
+// James Arnold (2020.09.11)
+void write_ankle_ASU_2D_stiff(void);
 
 void
 init_log_fns(void)
@@ -79,6 +81,7 @@ init_log_fns(void)
     ob->log_fns[21] = write_ankle_ped_fifo_fn;
     ob->log_fns[22] = write_ankle_ASU;
     ob->log_fns[23] = write_ankle_ASU_2D;
+    ob->log_fns[24] = write_ankle_ASU_2D_stiff;
 }
 
 // handle ref fns similarly to log fns
